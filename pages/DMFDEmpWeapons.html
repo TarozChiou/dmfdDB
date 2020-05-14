@@ -1,0 +1,3471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/DMFDEW.css">
+    <link rel="apple-touch-icon" sizes="76x76" href="../ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../ico/favicon-16x16.png">
+    <link rel="manifest" href="../ico/site.webmanifest">
+    <link rel="mask-icon" href="../ico/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#b91d47">
+    <meta name="theme-color" content="#343434">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <title>Empress' Weapon List</title>
+</head>
+
+<body>
+    <header>
+        <a href="DMFDHome.html">
+            <img class="logo" src="../img/logo.png" class="logo">
+        </a>
+        <nav class="toggle">
+            <ul class="navbar">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">Characters</a></li>
+                <li><a href="DMFDWeapons.html" class="active">Weapons</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="DMFDBoss.html">Bosses</a></li>
+            </ul>
+            <span class="navicon" id="navicon" onclick="navtoggle()"></span>
+        </nav>
+    </header>
+
+    <main class="content">
+        <h1 class="title">Empress' Weapon List</h1>
+        <section class="selector">
+
+            <select id="levelSelect" onchange="levelSelector()">
+                <option value="all">All Levels</option>
+                <option value="lv100">Lv.100</option>
+                <option value="lv90">Lv.90~95</option>
+                <option value="lv80">Lv.80~85</option>
+                <option value="lv70">Lv.70~75</option>
+            </select>
+        </section>
+
+        <section class="weapons-list">
+            <section id="weapons" class="show">
+                <form class="grid100">
+                    <h2 class="type">Lv.100 Small Sword</h2>
+                    <div class="s-sword">
+                        <div class="weapon">
+                            <h3 id="weapon-name">Lemurian Sword</h3>
+                            <div class="stat">
+                                <span>STR: 20</span>
+                                <span>ATK: 69</span>
+                                <span>AGI:</span>
+                                <span>M.ATK: 128</span>
+                                <span>INT: 20</span>
+                                <span>DEF:</span>
+                                <span>VIT:</span>
+                                <span>M.DEF:</span>
+                                <span>LUC:</span>
+                                <span>ACC:</span>
+                                <span>PIE: 20</span>
+                                <span>M.ACC: 55</span>
+                                <span>None</span>
+                                <span>CRT:</span>
+                            </div>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                        </div>
+
+                        <div class="weapon">
+                            <h3 id="weapon-name">Fragrach</h3>
+                            <div class="stat">
+                                <span>STR</span>
+                                <span>ATK:59</span>
+                                <span>AGI</span>
+                                <span>M.ATK:119</span>
+                                <span>INT:8</span>
+                                <span>DEF</span>
+                                <span>VIT</span>
+                                <span>M.DEF</span>
+                                <span>LUC:12</span>
+                                <span>ACC</span>
+                                <span>PIE</span>
+                                <span>M.ACC:52</span>
+                                <span>None</span>
+                                <span>CRT:6</span>
+                            </div>
+                            <p>+50% P.dmg. VS Deva</p>
+                            <p>Magic attack always hit</p>
+                            <p>Holy attacks always hit</p>
+                        </div>
+                        <div class="weapon">
+                            <h3 id="weapon-name">Fragrach+1</h3>
+                            <div class="stat">
+                                <span>STR</span>
+                                <span>ATK:63</span>
+                                <span>AGI</span>
+                                <span>M.ATK:123</span>
+                                <span>INT:12</span>
+                                <span>DEF</span>
+                                <span>VIT</span>
+                                <span>M.DEF</span>
+                                <span>LUC:15</span>
+                                <span>ACC</span>
+                                <span>PIE</span>
+                                <span>M.ACC:53</span>
+                                <span>None</span>
+                                <span>CRT:9</span>
+                            </div>
+                            <p>+50% P.dmg. VS Deva</p>
+                            <p>Magic attack always hit</p>
+                            <p>Holy attacks always hit</p>
+                        </div>
+                        <div class="weapon">
+                            <h3 id="weapon-name">Fragrach+2</h3>
+                            <div class="stat">
+                                <span>STR</span>
+                                <span>ATK:67</span>
+                                <span>AGI</span>
+                                <span>M.ATK:127</span>
+                                <span>INT:18</span>
+                                <span>DEF</span>
+                                <span>VIT</span>
+                                <span>M.DEF</span>
+                                <span>LUC:18</span>
+                                <span>ACC</span>
+                                <span>PIE</span>
+                                <span>M.ACC:54</span>
+                                <span>None</span>
+                                <span>CRT:12</span>
+                            </div>
+                            <p>+50% P.dmg. VS Deva</p>
+                            <p>Magic attack always hit</p>
+                            <p>Holy attacks always hit</p>
+                        </div>
+                        <div class="weapon">
+                            <h3 id="weapon-name">Fragrach+3</h3>
+                            <div class="stat">
+                                <span>STR</span>
+                                <span>ATK:69</span>
+                                <span>AGI</span>
+                                <span>M.ATK:128</span>
+                                <span>INT:23</span>
+                                <span>DEF</span>
+                                <span>VIT</span>
+                                <span>M.DEF</span>
+                                <span>LUC:23</span>
+                                <span>ACC</span>
+                                <span>PIE</span>
+                                <span>M.ACC:55</span>
+                                <span>None</span>
+                                <span>CRT:16</span>
+                            </div>
+                            <p>+50% P.dmg. VS Deva</p>
+                            <p>Magic attack always hit</p>
+                            <p>Holy attacks always hit</p>
+                        </div>
+                    </div>
+                    <h2 class="type">Lv.100 Sword</h2>
+                    <div class="sword">
+                        <div class="weapon">
+                            <h3 id="weapon-name">Lævateinn</h3>
+                            <div class="stat">
+                                <span>STR: 10</span>
+                                <span>ATK: 75</span>
+                                <span>AGI: 10</span>
+                                <span>M.ATK: </span>
+                                <span>INT: </span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: 10</span>
+                                <span>ACC: </span>
+                                <span>PIE: </span>
+                                <span>M.ACC: </span>
+                                <span>Fire </span>
+                                <span>CRT: 10</span>
+                            </div>
+                            <p>+50% P.dmg. VS Primal </p>
+                            <p>+50% P.dmg. to Lv.10+ enemies</p>
+                            <p></p>
+                        </div>
+                        <div class="weapon">
+                            <h3 id="weapon-name">Lævateinn+1</h3>
+                            <div class="stat">
+                                <span>STR: 15</span>
+                                <span>ATK: 80</span>
+                                <span>AGI: 15</span>
+                                <span>M.ATK: </span>
+                                <span>INT: </span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: 15</span>
+                                <span>ACC: </span>
+                                <span>PIE: </span>
+                                <span>M.ACC: </span>
+                                <span>Fire </span>
+                                <span>CRT: 15</span>
+                            </div>
+                            <p>+50% P.dmg. VS Primal </p>
+                            <p>+50% P.dmg. to Lv.10+ enemies</p>
+                            <p></p>
+                        </div>
+
+                        <div class="weapon">
+                            <h3 id="weapon-name">Lævateinn+2</h3>
+                            <div class="stat">
+                                <span>STR: 20</span>
+                                <span>ATK: 85</span>
+                                <span>AGI: 20</span>
+                                <span>M.ATK: </span>
+                                <span>INT: </span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: 20</span>
+                                <span>ACC: </span>
+                                <span>PIE: </span>
+                                <span>M.ACC: </span>
+                                <span>Fire </span>
+                                <span>CRT: 20</span>
+                            </div>
+                            <p>+60% P.dmg. VS Primal </p>
+                            <p>+50% P.dmg. to Lv.10+ enemies</p>
+                            <p></p>
+                        </div>
+
+                        <div class="weapon">
+                            <h3 id="weapon-name">Lævateinn+3</h3>
+                            <div class="stat">
+                                <span>STR: 25</span>
+                                <span>ATK: 87</span>
+                                <span>AGI: 25</span>
+                                <span>M.ATK: </span>
+                                <span>INT: </span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: 25</span>
+                                <span>ACC: </span>
+                                <span>PIE: </span>
+                                <span>M.ACC: </span>
+                                <span>Fire </span>
+                                <span>CRT: 25</span>
+                            </div>
+                            <p>+75% P.dmg. VS Primal </p>
+                            <p>+50% P.dmg. to Lv.10+ enemies</p>
+                            <p></p>
+                        </div>
+
+                        <div class="weapon">
+                            <h3 id="weapon-name">Excalibur</h3>
+                            <div class="stat">
+                                <span>STR: </span>
+                                <span>ATK: 100</span>
+                                <span>AGI: </span>
+                                <span>M.ATK: </span>
+                                <span>INT: </span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: </span>
+                                <span>ACC: 20</span>
+                                <span>PIE: </span>
+                                <span>M.ACC: </span>
+                                <span>None </span>
+                                <span>CRT: </span>
+                            </div>
+                            <p>+100% P.dmg. to Lv.10+ enemies</p>
+                            <p></p>
+                            <p></p>
+                        </div>
+                    </div>
+                </form>
+
+                <form class="grid90">
+                    <h2 class="type">Lv.95 Small Sword</h2>
+                    <div class="s-sword">
+                        <div class="weapon">
+                            <h3 id="weapon-name">Ridill</h3>
+                            <div class="stat">
+                                <span>STR: 10</span>
+                                <span>ATK: 57</span>
+                                <span>AGI: </span>
+                                <span>M.ATK: 114</span>
+                                <span>INT: 8</span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: </span>
+                                <span>ACC: </span>
+                                <span>PIE: 10</span>
+                                <span>M.ACC: 50</span>
+                                <span>None </span>
+                                <span>CRT: </span>
+                            </div>
+                            <p>+50% P.dmg. VS Asura</p>
+                            <p>+50% P.dmg. Lv.10+ enemies</p>
+                            <p></p>
+                        </div>
+
+                        <div class="weapon">
+                            <h3 id="weapon-name">Ridill+1</h3>
+                            <div class="stat">
+                                <span>STR: 15</span>
+                                <span>ATK: 61</span>
+                                <span>AGI: </span>
+                                <span>M.ATK: 118</span>
+                                <span>INT: 12</span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: </span>
+                                <span>ACC: </span>
+                                <span>PIE: 15</span>
+                                <span>M.ACC: 51</span>
+                                <span>None </span>
+                                <span>CRT: </span>
+                            </div>
+                            <p>+50% P.dmg. VS Asura</p>
+                            <p>+50% P.dmg. Lv.5+ enemies</p>
+                            <p></p>
+                        </div>
+
+                        <div class="weapon">
+                            <h3 id="weapon-name">Ridill+2</h3>
+                            <div class="stat">
+                                <span>STR: 20</span>
+                                <span>ATK: 65</span>
+                                <span>AGI: </span>
+                                <span>M.ATK: 121</span>
+                                <span>INT: 18</span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: </span>
+                                <span>ACC: </span>
+                                <span>PIE: 20</span>
+                                <span>M.ACC: 52</span>
+                                <span>None </span>
+                                <span>CRT: </span>
+                            </div>
+                            <p>+50% P.dmg. VS Asura</p>
+                            <p>+60% P.dmg. Lv.5+ enemies</p>
+                            <p></p>
+                        </div>
+
+                        <div class="weapon">
+                            <h3 id="weapon-name">Ridill+3</h3>
+                            <div class="stat">
+                                <span>STR: 25</span>
+                                <span>ATK: 67</span>
+                                <span>AGI: </span>
+                                <span>M.ATK: 123</span>
+                                <span>INT: </span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: </span>
+                                <span>ACC: </span>
+                                <span>PIE: 25</span>
+                                <span>M.ACC: 52</span>
+                                <span>None </span>
+                                <span>CRT </span>
+                            </div>
+                            <p>+50% P.dmg. VS Asura</p>
+                            <p>+75% P.dmg. Lv.5+ enemies</p>
+                            <p></p>
+                        </div>
+                    </div>
+
+                    <h2 class="type">Lv.95 Sword</h2>
+                    <div class="sword">
+                        <div class="weapon">
+                            <h3 id="weapon-name">Hrotti</h3>
+                            <div class="stat">
+                                <span>STR: </span>
+                                <span>ATK: 72</span>
+                                <span>AGI: </span>
+                                <span>M.ATK: </span>
+                                <span>INT: </span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: </span>
+                                <span>ACC: 25</span>
+                                <span>PIE: 30</span>
+                                <span>M.ACC: </span>
+                                <span>Thunder </span>
+                                <span>CRT: </span>
+                            </div>
+                            <p>+50% P.dmg. to Lv.1+ enemies</p>
+                            <p></p>
+                            <p></p>
+                        </div>
+
+                        <div class="weapon">
+                            <h3 id="weapon-name">Hrotti+1</h3>
+                            <div class="stat">
+                                <span>STR: </span>
+                                <span>ATK: 77</span>
+                                <span>AGI: </span>
+                                <span>M.ATK: </span>
+                                <span>INT: </span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: </span>
+                                <span>ACC: 30</span>
+                                <span>PIE: 35</span>
+                                <span>M.ACC: </span>
+                                <span>Thunder </span>
+                                <span>CRT: </span>
+                            </div>
+                            <p>+60% P.dmg. to Lv.1+ enemies</p>
+                            <p></p>
+                            <p></p>
+                        </div>
+
+                        <div class="weapon">
+                            <h3 id="weapon-name">Hrotti+2</h3>
+                            <div class="stat">
+                                <span>STR: </span>
+                                <span>ATK: 82</span>
+                                <span>AGI: </span>
+                                <span>M.ATK: </span>
+                                <span>INT: </span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: </span>
+                                <span>ACC: 35</span>
+                                <span>PIE: 45</span>
+                                <span>M.ACC: </span>
+                                <span>Thunder </span>
+                                <span>CRT: </span>
+                            </div>
+                            <p>+70% P.dmg. to Lv.1+ enemies</p>
+                            <p></p>
+                            <p></p>
+                        </div>
+
+                        <div class="weapon">
+                            <h3 id="weapon-name">Hrotti+3</h3>
+                            <div class="stat">
+                                <span>STR: </span>
+                                <span>ATK: 84</span>
+                                <span>AGI: </span>
+                                <span>M.ATK: </span>
+                                <span>INT: </span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: </span>
+                                <span>ACC: 40</span>
+                                <span>PIE: 60</span>
+                                <span>M.ACC: </span>
+                                <span>Thunder </span>
+                                <span>CRT: </span>
+                            </div>
+                            <p>+80% P.dmg. to Lv.1+ enemies</p>
+                            <p></p>
+                            <p></p>
+                        </div>
+                    </div>
+
+                    <h2 class="type">Lv.90 Small Sword</h2>
+                    <div class="s-sword">
+                        <div class="weapon">
+                            <h3 id="weapon-name">Schiavona</h3>
+                            <div class="stat">
+                                <span>STR: 7</span>
+                                <span>ATK: 45</span>
+                                <span>AGI: </span>
+                                <span>M.ATK: 99</span>
+                                <span>INT: </span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: </span>
+                                <span>ACC: </span>
+                                <span>PIE: 7</span>
+                                <span>M.ACC: 45</span>
+                                <span>None </span>
+                                <span>CRT: </span>
+                            </div>
+                            <p>+25% P.dmg. Lv.5+ enemies</p>
+                            <p>P.Atk. +50% during Drg Sphere</p>
+                            <p></p>
+                        </div>
+
+                        <div class="weapon">
+                            <h3 id="weapon-name">Schiavona+1</h3>
+                            <div class="stat">
+                                <span>STR: 10</span>
+                                <span>ATK: 51</span>
+                                <span>AGI: </span>
+                                <span>M.ATK: 106</span>
+                                <span>INT: </span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: </span>
+                                <span>ACC: </span>
+                                <span>PIE: 10</span>
+                                <span>M.ACC: 46</span>
+                                <span>None </span>
+                                <span>CRT: </span>
+                            </div>
+                            <p>+25% P.dmg. Lv.5+ enemies</p>
+                            <p>P.Atk. +100% during Drg Sphere</p>
+                            <p></p>
+                        </div>
+
+                        <div class="weapon">
+                            <h3 id="weapon-name">Schiavona+2</h3>
+                            <div class="stat">
+                                <span>STR: 15</span>
+                                <span>ATK: 55</span>
+                                <span>AGI: </span>
+                                <span>M.ATK: 108</span>
+                                <span>INT: </span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: </span>
+                                <span>ACC: </span>
+                                <span>PIE: 15</span>
+                                <span>M.ACC: 47</span>
+                                <span>None </span>
+                                <span>CRT: </span>
+                            </div>
+                            <p>+50% P.dmg. Lv.10+ enemies</p>
+                            <p>P.Atk. +150% during Drg Sphere</p>
+                            <p></p>
+                        </div>
+
+                        <div class="weapon">
+                            <h3 id="weapon-name">Heavy Schiavona</h3>
+                            <div class="stat">
+                                <span>STR: 20</span>
+                                <span>ATK: 63</span>
+                                <span>AGI: </span>
+                                <span>M.ATK: 116</span>
+                                <span>INT: </span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: </span>
+                                <span>ACC: 20</span>
+                                <span>PIE: 20</span>
+                                <span>M.ACC: 49</span>
+                                <span>None </span>
+                                <span>CRT: </span>
+                            </div>
+                            <p>+50% P.dmg. Lv.10+ enemies</p>
+                            <p>P.Atk. +200% during Drg Sphere</p>
+                            <p></p>
+                        </div>
+
+                        <div class="weapon">
+                            <h3 id="weapon-name">Green Dragon Guandao</h3>
+                            <div class="stat">
+                                <span>STR: 15</span>
+                                <span>ATK: 65</span>
+                                <span>AGI: 15</span>
+                                <span>M.ATK: 117</span>
+                                <span>INT: </span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: </span>
+                                <span>ACC: </span>
+                                <span>PIE: 15</span>
+                                <span>M.ACC: 50</span>
+                                <span>None </span>
+                                <span>CRT: </span>
+                            </div>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                        </div>
+                    </div>
+
+                    <h2 class="type">Lv.90 Sword</h2>
+                    <div class="sword">
+                        <div class="weapon">
+                            <h3 id="weapon-name">Scramasax</h3>
+                            <div class="stat">
+                                <span>STR: </span>
+                                <span>ATK: 57</span>
+                                <span>AGI: 5</span>
+                                <span>M.ATK: </span>
+                                <span>INT: </span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: </span>
+                                <span>ACC: </span>
+                                <span>PIE: </span>
+                                <span>M.ACC: </span>
+                                <span>None </span>
+                                <span>CRT: </span>
+                            </div>
+                            <p>+25% P.dmg. to Lv.15+ enemies</p>
+                            <p></p>
+                            <p></p>
+                        </div>
+
+                        <div class="weapon">
+                            <h3 id="weapon-name">Scramasax+1</h3>
+                            <div class="stat">
+                                <span>STR: </span>
+                                <span>ATK: 65</span>
+                                <span>AGI: 10</span>
+                                <span>M.ATK: </span>
+                                <span>INT: </span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: </span>
+                                <span>ACC: </span>
+                                <span>PIE: </span>
+                                <span>M.ACC: </span>
+                                <span>None </span>
+                                <span>CRT: </span>
+                            </div>
+                            <p>+50% P.dmg. to Lv.15+ enemies</p>
+                            <p></p>
+                            <p></p>
+                        </div>
+
+                        <div class="weapon">
+                            <h3 id="weapon-name">Scramasax+2</h3>
+                            <div class="stat">
+                                <span>STR: </span>
+                                <span>ATK: 72</span>
+                                <span>AGI: 15</span>
+                                <span>M.ATK: </span>
+                                <span>INT: </span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: 10</span>
+                                <span>ACC: </span>
+                                <span>PIE: </span>
+                                <span>M.ACC: </span>
+                                <span>None </span>
+                                <span>CRT: 15</span>
+                            </div>
+                            <p>+75% P.dmg. to Lv.25+ enemies</p>
+                            <p></p>
+                            <p></p>
+                        </div>
+
+                        <div class="weapon">
+                            <h3 id="weapon-name">Caladbolg</h3>
+                            <div class="stat">
+                                <span>STR: </span>
+                                <span>ATK: 79</span>
+                                <span>AGI: 20</span>
+                                <span>M.ATK: </span>
+                                <span>INT: </span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: 20</span>
+                                <span>ACC: </span>
+                                <span>PIE: </span>
+                                <span>M.ACC: </span>
+                                <span>Thunder </span>
+                                <span>CRT: 20</span>
+                            </div>
+                            <p>+100% P.dmg. to Lv.25+ enemies</p>
+                            <p>P.Atk +200% during Drg. Sphere</p>
+                            <p></p>
+                        </div>
+
+                        <div class="weapon">
+                            <h3 id="weapon-name">Vorpal Sword</h3>
+                            <div class="stat">
+                                <span>STR: </span>
+                                <span>ATK: 81</span>
+                                <span>AGI: 30</span>
+                                <span>M.ATK: </span>
+                                <span>INT: </span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: </span>
+                                <span>ACC: </span>
+                                <span>PIE: </span>
+                                <span>M.ACC: </span>
+                                <span>Ice </span>
+                                <span>CRT: </span>
+                            </div>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                        </div>
+
+                        <div class="weapon">
+                            <h3 id="weapon-name">Medius Templar's Glaive</h3>
+                            <div class="stat">
+                                <span>STR: 20</span>
+                                <span>ATK: 79</span>
+                                <span>AGI: 20</span>
+                                <span>M.ATK: </span>
+                                <span>INT: </span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: </span>
+                                <span>ACC: 20</span>
+                                <span>PIE: 55</span>
+                                <span>M.ACC: </span>
+                                <span>None </span>
+                                <span>CRT: </span>
+                            </div>
+                            <p>+50% P.dmg. VS Primal</p>
+                            <p>+50% P.dmg. to Lv.10+ enemies</p>
+                            <p>Restore 3% HP every 3 sec</p>
+                        </div>
+                    </div>
+                </form>
+
+                <form class="grid80">
+                    <h2 class="type">Lv.85 Small Sword</h2>
+                    <div class="s-sword">
+                        <div class="weapon">
+                            <h3 id="weapon-name">Guandao</h3>
+                            <div class="stat">
+                                <span>STR: 5</span>
+                                <span>ATK: 43</span>
+                                <span>AGI: 5</span>
+                                <span>M.ATK: 96</span>
+                                <span>INT: </span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: </span>
+                                <span>ACC: </span>
+                                <span>PIE: 5</span>
+                                <span>M.ACC: 42</span>
+                                <span>None </span>
+                                <span>CRT: </span>
+                            </div>
+                            <p>+25% P.dmg. VS Primal</p>
+                            <p></p>
+                            <p></p>
+                        </div>
+
+                        <div class="weapon">
+                            <h3 id="weapon-name">Guandao +1</h3>
+                            <div class="stat">
+                                <span>STR: 9</span>
+                                <span>ATK: 47</span>
+                                <span>AGI: 9</span>
+                                <span>M.ATK: 99</span>
+                                <span>INT: </span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: </span>
+                                <span>ACC: </span>
+                                <span>PIE: 9</span>
+                                <span>M.ACC: 43</span>
+                                <span>None </span>
+                                <span>CRT: </span>
+                            </div>
+                            <p>+25% P.dmg. VS Primal</p>
+                            <p></p>
+                            <p></p>
+                        </div>
+
+                        <div class="weapon">
+                            <h3 id="weapon-name">Guandao +2</h3>
+                            <div class="stat">
+                                <span>STR: 13</span>
+                                <span>ATK: 55</span>
+                                <span>AGI: 13</span>
+                                <span>M.ATK: 106</span>
+                                <span>INT: </span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: </span>
+                                <span>ACC: </span>
+                                <span>PIE: 13</span>
+                                <span>M.ACC: 45</span>
+                                <span>None </span>
+                                <span>CRT: </span>
+                            </div>
+                            <p>+50% P.dmg. VS Primal</p>
+                            <p></p>
+                            <p></p>
+                        </div>
+
+                        <div class="weapon">
+                            <h3 id="weapon-name">Ipetam</h3>
+                            <div class="stat">
+                                <span>STR: 18</span>
+                                <span>ATK: 59</span>
+                                <span>AGI: 18</span>
+                                <span>M.ATK: 109</span>
+                                <span>INT: </span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: </span>
+                                <span>ACC: </span>
+                                <span>PIE: 18</span>
+                                <span>M.ACC: 46</span>
+                                <span>Posion </span>
+                                <span>CRT: </span>
+                            </div>
+                            <p>+50% P.dmg. VS Primal</p>
+                            <p>Permanent Poison status</p>
+                            <p></p>
+                        </div>
+                    </div>
+
+                    <h2 class="type">Lv.85 Sword</h2>
+                    <div class="sword">
+                        <div class="weapon">
+                            <h3 id="weapon-name">Backsword</h3>
+                            <div class="stat">
+                                <span>STR: </span>
+                                <span>ATK: 58</span>
+                                <span>AGI: </span>
+                                <span>M.ATK: </span>
+                                <span>INT: </span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: </span>
+                                <span>ACC: 20</span>
+                                <span>PIE: 20</span>
+                                <span>M.ACC: </span>
+                                <span>None </span>
+                                <span>CRT: </span>
+                            </div>
+                            <p>+20% P.dmg. to Lv.5+ enemies</p>
+                            <p></p>
+                            <p></p>
+                        </div>
+
+                        <div class="weapon">
+                            <h3 id="weapon-name">Backsword +1</h3>
+                            <div class="stat">
+                                <span>STR: </span>
+                                <span>ATK: 63</span>
+                                <span>AGI: </span>
+                                <span>M.ATK: </span>
+                                <span>INT: </span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: </span>
+                                <span>ACC: 25</span>
+                                <span>PIE: 30</span>
+                                <span>M.ACC: </span>
+                                <span>None </span>
+                                <span>CRT: </span>
+                            </div>
+                            <p>+30% P.dmg. to Lv.5+ enemies</p>
+                            <p></p>
+                            <p></p>
+                        </div>
+
+                        <div class="weapon">
+                            <h3 id="weapon-name">Backsword +2</h3>
+                            <div class="stat">
+                                <span>STR: </span>
+                                <span>ATK: 67</span>
+                                <span>AGI: </span>
+                                <span>M.ATK: </span>
+                                <span>INT: </span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: </span>
+                                <span>ACC: 30</span>
+                                <span>PIE: 35</span>
+                                <span>M.ACC: </span>
+                                <span>None </span>
+                                <span>CRT: </span>
+                            </div>
+                            <p>+50% P.dmg. to Lv.5+ enemies</p>
+                            <p></p>
+                            <p></p>
+                        </div>
+
+                        <div class="weapon">
+                            <h3 id="weapon-name">Claiomh Solais</h3>
+                            <div class="stat">
+                                <span>STR: </span>
+                                <span>ATK: 75</span>
+                                <span>AGI: </span>
+                                <span>M.ATK: </span>
+                                <span>INT: </span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: </span>
+                                <span>ACC: 35</span>
+                                <span>PIE: 40</span>
+                                <span>M.ACC: </span>
+                                <span>Fire </span>
+                                <span>CRT: </span>
+                            </div>
+                            <p>+75% P.dmg. to Lv.5+ enemies</p>
+                            <p></p>
+                            <p></p>
+                        </div>
+                    </div>
+
+                    <h2 class="type">Lv.80 Small Sword</h2>
+                    <div class="s-sword">
+                        <div class="weapon">
+                            <h3 id="weapon-name">Estoc</h3>
+                            <div class="stat">
+                                <span>STR: </span>
+                                <span>ATK: 42</span>
+                                <span>AGI: 8</span>
+                                <span>M.ATK: 89</span>
+                                <span>INT: </span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: </span>
+                                <span>ACC: </span>
+                                <span>PIE: 5</span>
+                                <span>M.ACC: 40</span>
+                                <span>None </span>
+                                <span>CRT: 5</span>
+                            </div>
+                            <p>Movement speed +10%</p>
+                            <p>Jump distance +10%</p>
+                            <p></p>
+                        </div>
+
+                        <div class="weapon">
+                            <h3 id="weapon-name">Estoc +1</h3>
+                            <div class="stat">
+                                <span>STR: </span>
+                                <span>ATK: 48</span>
+                                <span>AGI: 12</span>
+                                <span>M.ATK: 95</span>
+                                <span>INT: </span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: </span>
+                                <span>ACC: </span>
+                                <span>PIE: 8</span>
+                                <span>M.ACC: 41</span>
+                                <span>None </span>
+                                <span>CRT: 10</span>
+                            </div>
+                            <p>Movement speed +10%</p>
+                            <p>Jump distance +10%</p>
+                            <p></p>
+                        </div>
+
+                        <div class="weapon">
+                            <h3 id="weapon-name">Estoc +2</h3>
+                            <div class="stat">
+
+                                <span>STR: </span>
+                                <span>ATK: 54</span>
+                                <span>AGI: 16</span>
+                                <span>M.ATK: 100</span>
+                                <span>INT: </span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: </span>
+                                <span>ACC: </span>
+                                <span>PIE: 12</span>
+                                <span>M.ACC: 43</span>
+                                <span>None </span>
+                                <span>CRT: 15</span>
+                            </div>
+                            <p>Movement speed +10%</p>
+                            <p>Jump distance +10%</p>
+                            <p></p>
+                        </div>
+
+                        <div class="weapon">
+                            <h3 id="weapon-name">Panzerstecher</h3>
+                            <div class="stat">
+                                <span>STR: </span>
+                                <span>ATK: 58</span>
+                                <span>AGI: 22</span>
+                                <span>M.ATK: 104</span>
+                                <span>INT: </span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: </span>
+                                <span>ACC: </span>
+                                <span>PIE: 17</span>
+                                <span>M.ACC: 44</span>
+                                <span>None </span>
+                                <span>CRT: 20</span>
+                            </div>
+                            <p>Movement speed +10%</p>
+                            <p>Jump distance +10%</p>
+                            <p></p>
+                        </div>
+
+                        <div class="weapon">
+                            <h3 id="weapon-name">Murgleis</h3>
+                            <div class="stat">
+                                <span>STR: </span>
+                                <span>ATK: 60</span>
+                                <span>AGI: 15</span>
+                                <span>M.ATK: 106</span>
+                                <span>INT: </span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: </span>
+                                <span>ACC: </span>
+                                <span>PIE: 15</span>
+                                <span>M.ACC: 44</span>
+                                <span>None </span>
+                                <span>CRT: 15</span>
+                            </div>
+                            <p>Movement speed +10%</p>
+                            <p>Jump distance +10%</p>
+                            <p></p>
+                        </div>
+                    </div>
+
+                    <h2 class="type">Lv.80 Sword</h2>
+                    <div class="sword">
+                        <div class="weapon">
+                            <h3 id="weapon-name">Arming Sword</h3>
+                            <div class="stat">
+                                <span>STR: 3</span>
+                                <span>ATK: 52</span>
+                                <span>AGI: </span>
+                                <span>M.ATK: </span>
+                                <span>INT: </span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: </span>
+                                <span>ACC: 5</span>
+                                <span>PIE: </span>
+                                <span>M.ACC: </span>
+                                <span>None </span>
+                                <span>CRT: </span>
+                            </div>
+                            <p>+25% P.dmg. to Lv.10+ enemies</p>
+                            <p>Restore 2% HP every 5 sec</p>
+                            <p></p>
+                        </div>
+
+                        <div class="weapon">
+                            <h3 id="weapon-name">Arming Sword +1</h3>
+                            <div class="stat">
+                                <span>STR: 7</span>
+                                <span>ATK: 60</span>
+                                <span>AGI: </span>
+                                <span>M.ATK: </span>
+                                <span>INT: </span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: </span>
+                                <span>ACC: 10</span>
+                                <span>PIE: </span>
+                                <span>M.ACC: </span>
+                                <span>None </span>
+                                <span>CRT: </span>
+                            </div>
+                            <p>+50% P.dmg. to Lv.10+ enemies</p>
+                            <p>Restore 2% HP every 5 sec</p>
+                            <p></p>
+                        </div>
+
+                        <div class="weapon">
+                            <h3 id="weapon-name">Arming Sword +2</h3>
+                            <div class="stat">
+                                <span>STR: 12</span>
+                                <span>ATK: 67</span>
+                                <span>AGI: </span>
+                                <span>M.ATK: </span>
+                                <span>INT: </span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: </span>
+                                <span>ACC: 20</span>
+                                <span>PIE: </span>
+                                <span>M.ACC: </span>
+                                <span>None </span>
+                                <span>CRT: </span>
+                            </div>
+                            <p>+50% P.dmg. to Lv.10+ enemies</p>
+                            <p>Restore 2% HP every 5 sec</p>
+                            <p></p>
+                        </div>
+
+                        <div class="weapon">
+                            <h3 id="weapon-name">Blutgang</h3>
+                            <div class="stat">
+                                <span>STR: 20</span>
+                                <span>ATK: 74</span>
+                                <span>AGI: </span>
+                                <span>M.ATK: </span>
+                                <span>INT: </span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: </span>
+                                <span>ACC: 30</span>
+                                <span>PIE: </span>
+                                <span>M.ACC: </span>
+                                <span>None </span>
+                                <span>CRT: </span>
+                            </div>
+                            <p>+50% P.dmg. VS Primal</p>
+                            <p>+50% P.dmg. to Lv.10+ enemies</p>
+                            <p>Restore 3% HP every 3 sec</p>
+                        </div>
+
+                        <div class="weapon">
+                            <h3 id="weapon-name">Masamune</h3>
+                            <div class="stat">
+                                <span>STR: 15</span>
+                                <span>ATK: 74</span>
+                                <span>AGI: 12</span>
+                                <span>M.ATK: </span>
+                                <span>INT: </span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: </span>
+                                <span>ACC: </span>
+                                <span>PIE: </span>
+                                <span>M.ACC: </span>
+                                <span>None </span>
+                                <span>CRT: 15</span>
+                            </div>
+                            <p>+50% P.dmg. VS Primal</p>
+                            <p></p>
+                            <p></p>
+                        </div>
+
+                        <div class="weapon">
+                            <h3 id="weapon-name">Medius Templar's Blade</h3>
+                            <div class="stat">
+                                <span>STR: 20</span>
+                                <span>ATK: 72</span>
+                                <span>AGI: 15</span>
+                                <span>M.ATK: </span>
+                                <span>INT: </span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: </span>
+                                <span>ACC: 15</span>
+                                <span>PIE: 40</span>
+                                <span>M.ACC: </span>
+                                <span>None </span>
+                                <span>CRT: </span>
+                            </div>
+                            <p>+50% P.dmg. VS Primal</p>
+                            <p>+50% P.dmg. to Lv.10+ enemies</p>
+                            <p>Restore 3% HP every 3 sec</p>
+                        </div>
+                    </div>
+                </form>
+
+                <form class="grid70">
+                    <h2 class="type">Lv75 Small Sword</h2>
+                    <div class="s-sword">
+                        <div class="weapon">
+                            <h3 id="weapon-name">Talwar</h3>
+                            <div class="stat">
+                                <span>STR: 2</span>
+                                <span>ATK: 38</span>
+                                <span>AGI: 2</span>
+                                <span>M.ATK: 79</span>
+                                <span>INT: </span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: </span>
+                                <span>ACC: </span>
+                                <span>PIE: 2</span>
+                                <span>M.ACC: 35</span>
+                                <span>None </span>
+                                <span>CRT: </span>
+                            </div>
+                            <p>+25% P.dmg. VS Primal</p>
+                            <p></p>
+                            <p></p>
+                        </div>
+
+                        <div class="weapon">
+                            <h3 id="weapon-name">Talwar +1</h3>
+                            <div class="stat">
+                                <span>STR: 5</span>
+                                <span>ATK: 42</span>
+                                <span>AGI: 5</span>
+                                <span>M.ATK: 83</span>
+                                <span>INT: </span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: </span>
+                                <span>ACC: </span>
+                                <span>PIE: 5</span>
+                                <span>M.ACC: 36</span>
+                                <span>None </span>
+                                <span>CRT: </span>
+                            </div>
+                            <p>+25% P.dmg. VS Primal</p>
+                            <p></p>
+                            <p></p>
+                        </div>
+
+                        <div class="weapon">
+                            <h3 id="weapon-name">Talwar +2</h3>
+                            <div class="stat">
+                                <span>STR: 9</span>
+                                <span>ATK: 50</span>
+                                <span>AGI: 9</span>
+                                <span>M.ATK: 90</span>
+                                <span>INT: </span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: </span>
+                                <span>ACC: </span>
+                                <span>PIE: 9</span>
+                                <span>M.ACC: 38</span>
+                                <span>None </span>
+                                <span>CRT: </span>
+                            </div>
+                            <p>+50% P.dmg. VS Primal</p>
+                            <p></p>
+                            <p></p>
+                        </div>
+
+                        <div class="weapon">
+                            <h3 id="weapon-name">Demonic Talwar</h3>
+                            <div class="stat">
+                                <span>STR: 13</span>
+                                <span>ATK: 54</span>
+                                <span>AGI: 13</span>
+                                <span>M.ATK: 94</span>
+                                <span>INT: </span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: </span>
+                                <span>ACC: </span>
+                                <span>PIE: 13</span>
+                                <span>M.ACC: 39</span>
+                                <span>None </span>
+                                <span>CRT: </span>
+                            </div>
+                            <p>+50% P.dmg. VS Primal</p>
+                            <p>+75% P.Atk. During neg. status</p>
+                            <p></p>
+                        </div>
+                    </div>
+
+                    <h2 class="type">Lv.75 Sword</h2>
+                    <div class="sword">
+                        <div class="weapon">
+                            <h3 id="weapon-name">Sengo Masashige</h3>
+                            <div class="stat">
+                                <span>STR: 5</span>
+                                <span>ATK: 53</span>
+                                <span>AGI: 5</span>
+                                <span>M.ATK: </span>
+                                <span>INT: </span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: </span>
+                                <span>ACC: </span>
+                                <span>PIE: 5</span>
+                                <span>M.ACC: </span>
+                                <span>None</span>
+                                <span>CRT: 5</span>
+                            </div>
+                            <p>+25% P.dmg. VS Deva</p>
+                            <p></p>
+                        </div>
+
+                        <div class="weapon">
+                            <h3 id="weapon-name">Sengo Masashige +1</h3>
+                            <div class="stat">
+                                <span>STR: 8</span>
+                                <span>ATK: 58</span>
+                                <span>AGI: 8</span>
+                                <span>M.ATK: </span>
+                                <span>INT: </span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: </span>
+                                <span>ACC: </span>
+                                <span>PIE: 8</span>
+                                <span>M.ACC: </span>
+                                <span>None</span>
+                                <span>CRT: 8</span>
+                            </div>
+                            <p>+50% P.dmg. VS Deva</p>
+                            <p></p>
+                        </div>
+
+                        <div class="weapon">
+                            <h3 id="weapon-name">Sengo Masashige +2</h3>
+                            <div class="stat">
+                                <span>STR: 12</span>
+                                <span>ATK: 62</span>
+                                <span>AGI: 12</span>
+                                <span>M.ATK: </span>
+                                <span>INT: </span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: </span>
+                                <span>ACC: </span>
+                                <span>PIE: 12</span>
+                                <span>M.ACC: </span>
+                                <span>None</span>
+                                <span>CRT: 12</span>
+                            </div>
+                            <p>+50% P.dmg. VS Deva</p>
+                            <p></p>
+                        </div>
+
+                        <div class="weapon">
+                            <h3 id="weapon-name">Sengo Muramasa</h3>
+                            <div class="stat">
+                                <span>STR: 15</span>
+                                <span>ATK: 70</span>
+                                <span>AGI: 15</span>
+                                <span>M.ATK: </span>
+                                <span>INT: </span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: </span>
+                                <span>ACC: </span>
+                                <span>PIE: 15</span>
+                                <span>M.ACC: </span>
+                                <span>Thunder</span>
+                                <span>CRT: 15</span>
+                            </div>
+                            <p>+50% P.dmg. VS Deva</p>
+                            <p>+50% P.dmg. to Lv.10+ enemies</p>
+                            <p>Night vision</p>
+                        </div>
+                    </div>
+
+                    <h2 class="type">Lv70 Small Sword</h2>
+                    <div class="s-sword">
+                        <div class="weapon">
+                            <h3 id="weapon-name">Falchion</h3>
+                            <div class="stat">
+                                <span>STR: 2</span>
+                                <span>ATK: 40</span>
+                                <span>AGI: </span>
+                                <span>M.ATK: 84</span>
+                                <span>INT: 2</span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: </span>
+                                <span>ACC: </span>
+                                <span>PIE: 2</span>
+                                <span>M.ACC: 37</span>
+                                <span>None </span>
+                                <span>CRT: </span>
+                            </div>
+                            <p>+25% P.dmg. VS Asura</p>
+                            <p></p>
+                            <p></p>
+                        </div>
+
+                        <div class="weapon">
+                            <h3 id="weapon-name">Falchion +1</h3>
+                            <div class="stat">
+                                <span>STR: 5</span>
+                                <span>ATK: 46</span>
+                                <span>AGI: </span>
+                                <span>M.ATK: 89</span>
+                                <span>INT: 5</span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: </span>
+                                <span>ACC: </span>
+                                <span>PIE: 5</span>
+                                <span>M.ACC: 39</span>
+                                <span>None </span>
+                                <span>CRT: </span>
+                            </div>
+                            <p>+25% P.dmg. VS Asura</p>
+                            <p></p>
+                            <p></p>
+                        </div>
+
+                        <div class="weapon">
+                            <h3 id="weapon-name">Falchion +2</h3>
+                            <div class="stat">
+                                <span>STR: 10</span>
+                                <span>ATK: 52</span>
+                                <span>AGI: </span>
+                                <span>M.ATK: 95</span>
+                                <span>INT: 10</span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: </span>
+                                <span>ACC: </span>
+                                <span>PIE: 10</span>
+                                <span>M.ACC: 40</span>
+                                <span>None </span>
+                                <span>CRT: </span>
+                            </div>
+                            <p>+50% P.dmg. VS Asura</p>
+                            <p></p>
+                            <p></p>
+                        </div>
+
+                        <div class="weapon">
+                            <h3 id="weapon-name">Great Falchion</h3>
+                            <div class="stat">
+                                <span>STR: 15</span>
+                                <span>ATK: 58</span>
+                                <span>AGI: </span>
+                                <span>M.ATK: 100</span>
+                                <span>INT: 15</span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: </span>
+                                <span>ACC: </span>
+                                <span>PIE: 15</span>
+                                <span>M.ACC: 42</span>
+                                <span>None </span>
+                                <span>CRT: </span>
+                            </div>
+                            <p>+50% P.dmg. VS Asura</p>
+                            <p>+50% P.dmg. Lv.10+ enemies</p>
+                            <p></p>
+                        </div>
+                    </div>
+
+                    <h2 class="type">Lv.70 Sword</h2>
+                    <div class="sword">
+                        <div class="weapon">
+                            <h3 id="weapon-name">Katzbalger</h3>
+                            <div class="stat">
+                                <span>STR: </span>
+                                <span>ATK: 47</span>
+                                <span>AGI: 5</span>
+                                <span>M.ATK: </span>
+                                <span>INT: </span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: </span>
+                                <span>ACC: </span>
+                                <span>PIE: 5</span>
+                                <span>M.ACC: </span>
+                                <span>None </span>
+                                <span>CRT: 5</span>
+                            </div>
+                            <p>+25% P.dmg. VS Asura</p>
+                            <p></p>
+                            <p></p>
+                        </div>
+
+                        <div class="weapon">
+                            <h3 id="weapon-name">Katzbalger +1</h3>
+                            <div class="stat">
+                                <span>STR: </span>
+                                <span>ATK: 55</span>
+                                <span>AGI: 7</span>
+                                <span>M.ATK: </span>
+                                <span>INT: </span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: 7</span>
+                                <span>ACC: </span>
+                                <span>PIE: 7</span>
+                                <span>M.ACC: </span>
+                                <span>None </span>
+                                <span>CRT: 7</span>
+                            </div>
+                            <p>+25% P.dmg. VS Asura</p>
+                            <p></p>
+                            <p></p>
+                        </div>
+
+                        <div class="weapon">
+                            <h3 id="weapon-name">Katzbalger +2</h3>
+                            <div class="stat">
+                                <span>STR: </span>
+                                <span>ATK: 62</span>
+                                <span>AGI: 12</span>
+                                <span>M.ATK: </span>
+                                <span>INT: </span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: 12</span>
+                                <span>ACC: </span>
+                                <span>PIE: 12</span>
+                                <span>M.ACC: </span>
+                                <span>None </span>
+                                <span>CRT: 12</span>
+                            </div>
+                            <p>+25% P.dmg. VS Asura</p>
+                            <p></p>
+                            <p></p>
+                        </div>
+
+                        <div class="weapon">
+                            <h3 id="weapon-name">Emperor Sword</h3>
+                            <div class="stat">
+                                <span>STR: </span>
+                                <span>ATK: 69</span>
+                                <span>AGI: 15</span>
+                                <span>M.ATK: </span>
+                                <span>INT: </span>
+                                <span>DEF: </span>
+                                <span>VIT: </span>
+                                <span>M.DEF: </span>
+                                <span>LUC: 20</span>
+                                <span>ACC: </span>
+                                <span>PIE: 30</span>
+                                <span>M.ACC: </span>
+                                <span>Thunder </span>
+                                <span>CRT: 15</span>
+                            </div>
+                            <p>+50% P.dmg. VS Asura</p>
+                            <p>+50% P.dmg. to Lv.10+ enemies</p>
+                            <p></p>
+                        </div>
+
+                        <div class="weapon">
+                            <h3 id="weapon-name">Medius Templar's Sword</h3>
+                            <div class="stat">
+                                <span>STR: </span>
+                                <span>ATK: 67</span>
+                                <span>AGI: 15</span>
+                                <span>M.ATK: </span>
+                                <span>INT: </span>
+                                <span>DEF: </span>
+                                <span>VIT: 25</span>
+                                <span>M.DEF: </span>
+                                <span>LUC: </span>
+                                <span>ACC: </span>
+                                <span>PIE: 40</span>
+                                <span>M.ACC: </span>
+                                <span>None </span>
+                                <span>CRT: </span>
+                            </div>
+                            <p>+50% P.dmg. VS Primal</p>
+                            <p>+50% P.dmg. to Lv.5+ enemies</p>
+                            <p></p>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- <form class="grid60">
+                    <div class="s-sword"></div>
+                    <div class="sword"></div>
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+                </form>
+
+                <form class="grid50">
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+                </form> -->
+            </section>
+
+            <section id="weapons" class="hide">
+                <form class="grid100">
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+                </form>
+
+                <form class="grid90">
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+                </form>
+
+                <form class="grid80">
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+                </form>
+
+                <form class="grid70">
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+                </form>
+
+                <form class="grid60">
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+                </form>
+
+                <form class="grid50">
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+                </form>
+            </section>
+
+            <section id="weapons" class="hide">
+                <form class="grid100">
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+                </form>
+
+                <form class="grid90">
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+                </form>
+
+                <form class="grid80">
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+                </form>
+
+                <form class="grid70">
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+                </form>
+
+                <form class="grid60">
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+                </form>
+
+                <form class="grid50">
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+                </form>
+            </section>
+
+            <section id="weapons" class="hide">
+                <form class="grid100">
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+                </form>
+
+                <form class="grid90">
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+                </form>
+
+                <form class="grid80">
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+                </form>
+
+                <form class="grid70">
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+                </form>
+
+                <form class="grid60">
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+                </form>
+
+                <form class="grid50">
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+                </form>
+            </section>
+
+            <section id="weapons" class="hide">
+                <form class="grid100">
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+                </form>
+
+                <form class="grid90">
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+                </form>
+
+                <form class="grid80">
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+                </form>
+
+                <form class="grid70">
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+                </form>
+
+                <form class="grid60">
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+                </form>
+
+                <form class="grid50">
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+                </form>
+            </section>
+
+            <section id="weapons" class="hide">
+                <form class="grid100">
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+                </form>
+
+                <form class="grid90">
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+                </form>
+
+                <form class="grid80">
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+                </form>
+
+                <form class="grid70">
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+                </form>
+
+                <form class="grid60">
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+                </form>
+
+                <form class="grid50">
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+
+                    <div class="weapon">
+                        <h3 id="weapon-name">Weapon Name</h3>
+                        <div class="stat">
+                            <span>STR: </span>
+                            <span>ATK: </span>
+                            <span>AGI: </span>
+                            <span>M.ATK: </span>
+                            <span>INT: </span>
+                            <span>DEF: </span>
+                            <span>VIT: </span>
+                            <span>M.DEF: </span>
+                            <span>LUC: </span>
+                            <span>ACC: </span>
+                            <span>PIE: </span>
+                            <span>M.ACC: </span>
+                            <span>None</span>
+                            <span>CRT: </span>
+                        </div>
+                        <p>Effect 1</p>
+                        <p>Effect 2</p>
+                    </div>
+                </form>
+            </section>
+        </section>
+
+
+    </main>
+    <script src="../scripts/scriptw.js"></script>
+    <script src="../scripts/script.js"></script>
+</body>
+
+</html>

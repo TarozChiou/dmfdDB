@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/DMFDB.css">
+    <link rel="apple-touch-icon" sizes="76x76" href="../ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../ico/favicon-16x16.png">
+    <link rel="manifest" href="../ico/site.webmanifest">
+    <link rel="mask-icon" href="../ico/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#b91d47">
+    <meta name="theme-color" content="#343434">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <title>Boss List</title>
+</head>
+
+<body>
+    <header>
+        <a href="DMFDHome.html">
+            <img class="logo" src="../img/logo.png" class="logo">
+        </a>
+        <nav class="toggle">
+            <ul class="navbar">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">Characters</a></li>
+                <li><a href="DMFDWeapons.html">Weapons</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="DMFDBoss.html" class="active">Bosses</a></li>
+            </ul>
+            <span class="navicon" id="navicon" onclick="navtoggle()"></span>
+        </nav>
+    </header>
+
+    <main class="content">
+        <h1 class="title">Boss List</h1>
+        <section class="boss-list">
+            <section class="bosses">
+                <!-- of -->
+                <div id="" class="boss">
+                    <div class="left">
+                        <h2 class="of">Ogre Prince</h2>
+                        <img src="../img/boss/og.jpg" alt="">
+                        <div class="left-bottom">
+                            <span><i>Primal</i></span>
+                            <span><strong>STR</strong></span>
+                            <span><strong>AGI</strong></span>
+                            <span><strong>INT</strong></span>
+                            <span><strong>PIE</strong></span>
+
+                            <span>Mid</span>
+                            <span>Low</span>
+                            <span>High</span>
+                            <span>High</span>
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <span>+/1.5</span>
+                        <span><strong>STR</strong></span>
+                        <span><strong>AGI</strong></span>
+                        <span><strong>INT</strong></span>
+                        <span><strong>PIE</strong></span>
+
+                        <span><strong>Lv.115</strong></span>
+                        <span>+14</span>
+                        <span>+14</span>
+                        <span>+20</span>
+                        <span>+20</span>
+
+                        <span><strong>Lv.105</strong></span>
+                        <span>+7</span>
+                        <span>+7</span>
+                        <span>+10</span>
+                        <span>+10</span>
+
+                        <span class="standard"><strong>Lv.95</strong></span>
+                        <span class="standard">77</span>
+                        <span class="standard">52</span>
+                        <span class="standard">102</span>
+                        <span class="standard">102</span>
+
+                        <span><strong>Lv.85</strong></span>
+                        <span>-7</span>
+                        <span>-7</span>
+                        <span>-10</span>
+                        <span>-10</span>
+
+                        <span><strong>Lv.75</strong></span>
+                        <span>-14</span>
+                        <span>-14</span>
+                        <span>-20</span>
+                        <span>-20</span>
+
+                        <span>Ogre Eyeball in OF110, can be paralyzed</span>
+                    </div>
+                </div>
+                <!-- sot -->
+                <div id="" class="boss">
+                    <div class="left">
+                        <h2 class="sot">Cthulhu</h2>
+                        <img src="../img/boss/ct.jpg" alt="">
+                        <div class="left-bottom">
+                            <span><i>Primal</i></span>
+                            <span><strong>STR</strong></span>
+                            <span><strong>AGI</strong></span>
+                            <span><strong>INT</strong></span>
+                            <span><strong>PIE</strong></span>
+
+                            <span>High</span>
+                            <span>Low</span>
+                            <span>High</span>
+                            <span>Mid</span>
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <span>+/1.5</span>
+                        <span><strong>STR</strong></span>
+                        <span><strong>AGI</strong></span>
+                        <span><strong>INT</strong></span>
+                        <span><strong>PIE</strong></span>
+
+                        <span><strong>Lv.115</strong></span>
+                        <span>+20</span>
+                        <span>+10</span>
+                        <span>+20</span>
+                        <span>+14</span>
+
+                        <span><strong>Lv.105</strong></span>
+                        <span>+10</span>
+                        <span>+5</span>
+                        <span>+10</span>
+                        <span>+7</span>
+
+                        <span class="standard"><strong>Lv.95</strong></span>
+                        <span class="standard">102</span>
+                        <span class="standard">52</span>
+                        <span class="standard">102</span>
+                        <span class="standard">77</span>
+
+                        <span><strong>Lv.85</strong></span>
+                        <span>-10</span>
+                        <span>-5</span>
+                        <span>-10</span>
+                        <span>-7</span>
+
+                        <span><strong>Lv.75</strong></span>
+                        <span>-20</span>
+                        <span>-10</span>
+                        <span>-20</span>
+                        <span>-14</span>
+
+                        <span>Animal Eye in SoT90-110</span>
+                    </div>
+                </div>
+                <!-- ud -->
+                <div id="" class="boss">
+                    <div class="left">
+                        <h2 class="ud">Twin Dragon</h2>
+                        <img src="../img/boss/td.jpg" alt="">
+                        <div class="left-bottom">
+                            <span><i>Asura</i></span>
+                            <span><strong>STR</strong></span>
+                            <span><strong>AGI</strong></span>
+                            <span><strong>INT</strong></span>
+                            <span><strong>PIE</strong></span>
+
+                            <span>Mid</span>
+                            <span>Low</span>
+                            <span>High</span>
+                            <span>High</span>
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <span>+/1.5</span>
+                        <span><strong>STR</strong></span>
+                        <span><strong>AGI</strong></span>
+                        <span><strong>INT</strong></span>
+                        <span><strong>PIE</strong></span>
+
+                        <span><strong>Lv.115</strong></span>
+                        <span>+10</span>
+                        <span>+10</span>
+                        <span>+20</span>
+                        <span>+20</span>
+
+                        <span><strong>Lv.105</strong></span>
+                        <span>+5</span>
+                        <span>+5</span>
+                        <span>+10</span>
+                        <span>+7</span>
+
+                        <span class="standard"><strong>Lv.95</strong></span>
+                        <span class="standard">52</span>
+                        <span class="standard">52</span>
+                        <span class="standard">102</span>
+                        <span class="standard">77</span>
+
+                        <span><strong>Lv.85</strong></span>
+                        <span>-5</span>
+                        <span>-5</span>
+                        <span>-10</span>
+                        <span>-7</span>
+
+                        <span><strong>Lv.75</strong></span>
+                        <span>-10</span>
+                        <span>-10</span>
+                        <span>-20</span>
+                        <span>-20</span>
+
+                        <span>Ogre Eyeball in OF110, can be paralyzed</span>
+                    </div>
+                </div>
+                <!-- ur -->
+                <div id="" class="boss">
+                    <div class="left">
+                        <h2 class="ur">Equus</h2>
+                        <img src="../img/boss/eq.jpg" alt="">
+                        <div class="left-bottom">
+                            <span><i>Deva</i></span>
+                            <span><strong>STR</strong></span>
+                            <span><strong>AGI</strong></span>
+                            <span><strong>INT</strong></span>
+                            <span><strong>PIE</strong></span>
+
+                            <span>Mid</span>
+                            <span>Low</span>
+                            <span>High</span>
+                            <span>High</span>
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <span>+/1.5</span>
+                        <span><strong>STR</strong></span>
+                        <span><strong>AGI</strong></span>
+                        <span><strong>INT</strong></span>
+                        <span><strong>PIE</strong></span>
+
+                        <span><strong>Lv.115</strong></span>
+                        <span>+14</span>
+                        <span>+14</span>
+                        <span>+20</span>
+                        <span>+20</span>
+
+                        <span><strong>Lv.105</strong></span>
+                        <span>+7</span>
+                        <span>+7</span>
+                        <span>+10</span>
+                        <span>+10</span>
+
+                        <span class="standard"><strong>Lv.95</strong></span>
+                        <span class="standard">77</span>
+                        <span class="standard">52</span>
+                        <span class="standard">102</span>
+                        <span class="standard">102</span>
+
+                        <span><strong>Lv.85</strong></span>
+                        <span>-7</span>
+                        <span>-7</span>
+                        <span>-10</span>
+                        <span>-10</span>
+
+                        <span><strong>Lv.75</strong></span>
+                        <span>-14</span>
+                        <span>-14</span>
+                        <span>-20</span>
+                        <span>-20</span>
+
+                        <span></span>
+                    </div>
+                </div>
+                <!-- cp -->
+                <div id="" class="boss">
+                    <div class="left">
+                        <h2 class="cp">Asura Goblin</h2>
+                        <img src="../img/boss/ag.jpg" alt="">
+                        <div class="left-bottom">
+                            <span><i>Asura</i></span>
+                            <span><strong>STR</strong></span>
+                            <span><strong>AGI</strong></span>
+                            <span><strong>INT</strong></span>
+                            <span><strong>PIE</strong></span>
+
+                            <span>Mid</span>
+                            <span>Low</span>
+                            <span>High</span>
+                            <span>High</span>
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <span>+/1.5</span>
+                        <span><strong>STR</strong></span>
+                        <span><strong>AGI</strong></span>
+                        <span><strong>INT</strong></span>
+                        <span><strong>PIE</strong></span>
+
+                        <span><strong>Lv.115</strong></span>
+                        <span>+10</span>
+                        <span>+10</span>
+                        <span>+20</span>
+                        <span>+20</span>
+
+                        <span><strong>Lv.105</strong></span>
+                        <span>+5</span>
+                        <span>+5</span>
+                        <span>+10</span>
+                        <span>+10</span>
+
+                        <span class="standard"><strong>Lv.95</strong></span>
+                        <span class="standard">52</span>
+                        <span class="standard">52</span>
+                        <span class="standard">102</span>
+                        <span class="standard">102</span>
+
+                        <span><strong>Lv.85</strong></span>
+                        <span>-5</span>
+                        <span>-5</span>
+                        <span>-10</span>
+                        <span>-10</span>
+
+                        <span><strong>Lv.75</strong></span>
+                        <span>-10</span>
+                        <span>-10</span>
+                        <span>-20</span>
+                        <span>-20</span>
+
+                        <span></span>
+                    </div>
+                </div>
+                <!-- tcfh -->
+                <div id="" class="boss">
+                    <div class="left">
+                        <h2 class="tcfh">Jinryu</h2>
+                        <img src="../img/boss/jy.jpg" alt="">
+                        <div class="left-bottom">
+                            <span><i>Asura</i></span>
+                            <span><strong>STR</strong></span>
+                            <span><strong>AGI</strong></span>
+                            <span><strong>INT</strong></span>
+                            <span><strong>PIE</strong></span>
+
+                            <span>Mid</span>
+                            <span>Low</span>
+                            <span>High</span>
+                            <span>High</span>
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <span>Details</span>
+                        <span><strong>STR</strong></span>
+                        <span><strong>AGI</strong></span>
+                        <span><strong>INT</strong></span>
+                        <span><strong>PIE</strong></span>
+
+                        <span><strong>Lv.115</strong></span>
+                        <span>+14</span>
+                        <span>+10</span>
+                        <span>+20</span>
+                        <span>+20</span>
+
+                        <span><strong>Lv.105</strong></span>
+                        <span>+7</span>
+                        <span>+5</span>
+                        <span>+10</span>
+                        <span>+10</span>
+
+                        <span class="standard"><strong>Lv.95</strong></span>
+                        <span class="standard">77</span>
+                        <span class="standard">52</span>
+                        <span class="standard">102</span>
+                        <span class="standard">102</span>
+
+                        <span><strong>Lv.85</strong></span>
+                        <span>-7</span>
+                        <span>-5</span>
+                        <span>-10</span>
+                        <span>-10</span>
+
+                        <span><strong>Lv.75</strong></span>
+                        <span>-14</span>
+                        <span>-10</span>
+                        <span>-20</span>
+                        <span>-20</span>
+
+                        <span></span>
+                    </div>
+                </div>
+                <!-- tih -->
+                <div id="" class="boss">
+                    <div class="left">
+                        <h2 class="tih">Tonitrus</h2>
+                        <img src="../img/boss/ts.jpg" alt="">
+                        <div class="left-bottom">
+                            <span><i>Deva</i></span>
+                            <span><strong>STR</strong></span>
+                            <span><strong>AGI</strong></span>
+                            <span><strong>INT</strong></span>
+                            <span><strong>PIE</strong></span>
+
+                            <span>Mid</span>
+                            <span>Low</span>
+                            <span>High</span>
+                            <span>High</span>
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <span>Details</span>
+                        <span><strong>STR</strong></span>
+                        <span><strong>AGI</strong></span>
+                        <span><strong>INT</strong></span>
+                        <span><strong>PIE</strong></span>
+
+                        <span><strong>Lv.115</strong></span>
+                        <span>+10</span>
+                        <span>+20</span>
+                        <span>+20</span>
+                        <span>+20</span>
+
+                        <span><strong>Lv.105</strong></span>
+                        <span>+5</span>
+                        <span>+10</span>
+                        <span>+10</span>
+                        <span>+10</span>
+
+                        <span class="standard"><strong>Lv.95</strong></span>
+                        <span class="standard">52</span>
+                        <span class="standard">102</span>
+                        <span class="standard">102</span>
+                        <span class="standard">102</span>
+
+                        <span><strong>Lv.85</strong></span>
+                        <span>-5</span>
+                        <span>-10</span>
+                        <span>-10</span>
+                        <span>-10</span>
+
+                        <span><strong>Lv.75</strong></span>
+                        <span>-10</span>
+                        <span>-20</span>
+                        <span>-20</span>
+                        <span>-20</span>
+
+                        <span></span>
+                    </div>
+                </div>
+                <!-- sv -->
+                <div id="" class="boss">
+                    <div class="left">
+                        <h2 class="sv">Vasith</h2>
+                        <img src="../img/boss/vh.jpg" alt="">
+                        <div class="left-bottom">
+                            <span><i>Primal</i></span>
+                            <span><strong>STR</strong></span>
+                            <span><strong>AGI</strong></span>
+                            <span><strong>INT</strong></span>
+                            <span><strong>PIE</strong></span>
+
+                            <span>Mid</span>
+                            <span>Low</span>
+                            <span>High</span>
+                            <span>High</span>
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <span>+/1.5</span>
+                        <span><strong>STR</strong></span>
+                        <span><strong>AGI</strong></span>
+                        <span><strong>INT</strong></span>
+                        <span><strong>PIE</strong></span>
+
+                        <span><strong>Lv.115</strong></span>
+                        <span>+14</span>
+                        <span>+14</span>
+                        <span>+20</span>
+                        <span>+20</span>
+
+                        <span><strong>Lv.105</strong></span>
+                        <span>+7</span>
+                        <span>+7</span>
+                        <span>+10</span>
+                        <span>+10</span>
+
+                        <span class="standard"><strong>Lv.95</strong></span>
+                        <span class="standard">77</span>
+                        <span class="standard">77</span>
+                        <span class="standard">102</span>
+                        <span class="standard">102</span>
+
+                        <span><strong>Lv.85</strong></span>
+                        <span>-7</span>
+                        <span>-7</span>
+                        <span>-10</span>
+                        <span>-10</span>
+
+                        <span><strong>Lv.75</strong></span>
+                        <span>-14</span>
+                        <span>-14</span>
+                        <span>-20</span>
+                        <span>-20</span>
+
+                        <span></span>
+                    </div>
+                </div>
+                <!-- cot95 -->
+                <div id="cot95" class="boss">
+                    <div class="left">
+                        <h2 class="cot95">The Ancient Primal Lord</h2>
+                        <img src="../img/boss/cot95.jpg" alt="">
+                        <div class="left-bottom">
+                            <span><i>Primal</i></span>
+                            <span><strong>STR</strong></span>
+                            <span><strong>AGI</strong></span>
+                            <span><strong>INT</strong></span>
+                            <span><strong>PIE</strong></span>
+
+                            <span>Mid</span>
+                            <span>Low</span>
+                            <span>High</span>
+                            <span>High</span>
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <span>+/1.5</span>
+                        <span><strong>STR</strong></span>
+                        <span><strong>AGI</strong></span>
+                        <span><strong>INT</strong></span>
+                        <span><strong>PIE</strong></span>
+
+                        <span><strong>Lv.100</strong></span>
+                        <span>88</span>
+                        <span>117</span>
+                        <span>117</span>
+                        <span>117</span>
+
+                        <span>Bugs attack boss while being confused.</span>
+                    </div>
+                </div>
+                <!-- cot100 -->
+                <div id="cot100" class="boss">
+                    <div class="left">
+                        <h2 class="cot100">EX Vasith</h2>
+                        <img src="../img/boss/cot100.jpg" alt="">
+                        <div class="left-bottom">
+                            <span><i>Deva/Asura</i></span>
+                            <span><strong>STR</strong></span>
+                            <span><strong>AGI</strong></span>
+                            <span><strong>INT</strong></span>
+                            <span><strong>PIE</strong></span>
+
+                            <span>Mid</span>
+                            <span>Low</span>
+                            <span>High</span>
+                            <span>High</span>
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <span>+/1.5</span>
+                        <span><strong>STR</strong></span>
+                        <span><strong>AGI</strong></span>
+                        <span><strong>INT</strong></span>
+                        <span><strong>PIE</strong></span>
+
+                        <span><strong>Lv.105</strong></span>
+                        <span>88</span>
+                        <span>117</span>
+                        <span>117</span>
+                        <span>117</span>
+
+                        <span>CoT Only. White is Deva, Black is Asura. Some attack patterns are different in different
+                            forms.</span>
+                    </div>
+                </div>
+                <!-- cot105 -->
+                <div id="cot105" class="boss">
+                    <div class="left">
+                        <h2 class="cot105">The Sea Lord's Executioner</h2>
+                        <img src="../img/boss/cot105.jpg" alt="">
+                        <div class="left-bottom">
+                            <span><i>Primal</i></span>
+                            <span><strong>STR</strong></span>
+                            <span><strong>AGI</strong></span>
+                            <span><strong>INT</strong></span>
+                            <span><strong>PIE</strong></span>
+
+                            <span>Mid</span>
+                            <span>Low</span>
+                            <span>High</span>
+                            <span>High</span>
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <span>+/1.5</span>
+                        <span><strong>STR</strong></span>
+                        <span><strong>AGI</strong></span>
+                        <span><strong>INT</strong></span>
+                        <span><strong>PIE</strong></span>
+
+                        <span><strong>Lv.110</strong></span>
+                        <span>88</span>
+                        <span>117</span>
+                        <span>117</span>
+                        <span>117</span>
+
+                        <span>CoT Only. Tentecle can be confused, its cannon can deal massive dmg to the boss and
+                            instant-kill bugs... And us, of course.</span>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+    <script src="../scripts/script.js"></script>
+</body>
+
+</html>
