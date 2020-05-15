@@ -11,10 +11,10 @@
 .content {
     margin: 6em auto;
     display: flex;
-    display: -webkit-flex;
+    display: -webkit-flexbox;
     flex-direction: column;
     text-align: center;
-    height: 80vh;
+    /* height: 80vh; */
     animation: animation .5s;
 }
 
@@ -28,8 +28,7 @@
     position: relative;
     margin: 15px auto 0 auto;
     display: flex;
-    display: -webkit-flex;
-    -webkit-align-items: center;
+    display: -webkit-flexbox;
     justify-content: center;
     align-items: center;
     flex-direction: column;
