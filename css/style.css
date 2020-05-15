@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap'); */
 
 @font-face {
     font-family: 'webCambria';
@@ -48,7 +48,7 @@ li {
 }
 
 li a {
-    font-family: "webLato", "lato";
+    font-family: "webLato";
     text-decoration: none;
 }
 
