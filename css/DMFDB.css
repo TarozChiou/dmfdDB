@@ -14,6 +14,7 @@
     display: -webkit-flexbox;
     flex-direction: column;
     text-align: center;
+    height: 80vh;
     animation: animation .5s;
 }
 
