@@ -14,7 +14,7 @@
     display: -webkit-flexbox;
     flex-direction: column;
     text-align: center;
-    height:80vh;
+    height: 80vh;
     animation: animation .5s;
 }
 
@@ -42,6 +42,7 @@
 }
 
 .boss {
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     border: 5px solid white;
@@ -150,14 +151,6 @@
     grid-row: span 9;
 }
 
-@media(max-width:1670px) {
-    .bosses {
-        display: grid;
-        grid-gap: 2.5em;
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-
 @media(max-width:1300px) {
     header {
         padding: 0.5em 5em;
@@ -191,6 +184,12 @@
     .navbar.active > li {
         margin: 30px auto;
         font-size: 2em;
+    }
+
+    .bosses {
+        display: grid;
+        grid-gap: 2.5em;
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
