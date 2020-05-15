@@ -24,15 +24,15 @@ body {
 }
 
 body:before {
-    content: ' ';
-    position: fixed;
-    z-index: -1;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url("../img/bg.jpg");
-    background-size: cover;
+  content: ' ';
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(path/to/image) center 0 no-repeat;
+  background-size: cover;
 }
 
 li {
