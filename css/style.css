@@ -5,6 +5,11 @@
     src: local('fonts/Cambria.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'webLato';
+    src: local('fonts/Lato-Regular.ttf') format('truetype');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -43,7 +48,7 @@ li {
 }
 
 li a {
-    font-family: "lato";
+    font-family: "webLato", lato;
     text-decoration: none;
 }
 

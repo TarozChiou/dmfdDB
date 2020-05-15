@@ -151,13 +151,17 @@ h2 {
 
 @media(max-height:780px) {
     .content {
-        margin-top: 200px;
+        margin-top: 2em;
     }
 }
 
-@media(max-height:600px) {
+@media(max-height:700px) {
     body {
         overflow: visible;
+    }
+
+    .content {
+        margin-top: 10em;
     }
 
     .navbar.active > li {
