@@ -1,15 +1,1 @@
-$(window).on("scroll", function () {
-    if ($(this).scrollTop()) {
-        $("header").addClass("scrolled");
-    } else {
-        $("header").removeClass("scrolled");
-    }
-
-});
-
-function navtoggle() {
-    var navbar = document.querySelector(".navbar");
-    navbar.classList.toggle("active");
-    var navicon = document.querySelector("#navicon");
-    navicon.classList.toggle("active");
-}
+function navtoggle(){document.querySelector(".navbar").classList.toggle("active"),document.querySelector("#navicon").classList.toggle("active")}$(window).on("scroll",function(){$(this).scrollTop()?$("header").addClass("scrolled"):$("header").removeClass("scrolled")});
