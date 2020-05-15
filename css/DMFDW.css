@@ -59,7 +59,6 @@ h2 > a {
     position: relative;
     padding: 5px 20px 15px 20px;
     display: inline-block;
-    outline: none;
     text-decoration: none;
     overflow: hidden;
 }
