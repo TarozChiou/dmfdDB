@@ -18,7 +18,7 @@
     font-size: 3em;
 }
 
-.selector select{
+.selector select {
     padding: 5px 10px;
     font-size: 1.2em;
 }
@@ -30,7 +30,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width:90%;
+    width: 90%;
 }
 
 #weapons {
@@ -53,34 +53,18 @@
     opacity: 1;
 }
 
-/* .grid {
-    display: grid;
-    grid-gap: 3em;
-    grid-template-columns: repeat(4, 1fr);
-} */
-
-/* .grid50,
-.grid60,
-.grid70,
-.grid80,
-.grid90{
-    display: grid;
-    grid-gap: 2em 3em;
-    grid-template-columns: repeat(4, 1fr);
-} */
-
 .grid50,
 .grid60,
 .grid70,
 .grid80,
 .grid90,
-.grid100{
+.grid100 {
     display: flex;
     flex-direction: column;
     animation: animation .5s;
 }
 
-.type{
+.type {
     margin: 0.5em 0;
     display: flex;
     align-items: center;
@@ -91,54 +75,61 @@
     font-weight: 100;
 }
 
-.type::before, .type::after {
+.type::before,
+.type::after {
     content: '';
     flex: 1;
     border-bottom: 1px solid;
 }
 
 .type::before {
-    border-image: linear-gradient(to right,rgba(255,255,255,0), rgba(255,255,255,1)) 10;
+    border-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)) 10;
     margin-right: .25em;
 }
+
 .type::after {
-    border-image: linear-gradient(to left,rgba(255,255,255,0), rgba(255,255,255,1)) 10;
+    border-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)) 10;
     margin-left: .25em;
 }
 
-.s-sword, .sword{
+.s-sword,
+.sword {
     display: grid;
     grid-gap: 1.5em 3em;
     grid-template-columns: repeat(4, 1fr);
 }
 
 .weapon {
-    margin-bottom: 2em;
+    /*    margin-bottom: 2em;*/
     display: flex;
     align-items: center;
     min-width: 350px;
     flex-direction: column;
 }
 
-.weapon>h3 {
+.weapon > h3 {
     margin: 5px 0;
     font-size: 1.8em;
 }
 
 .stat {
     margin: 10px 0;
-    padding: 5px;
+    padding: 10px;
     display: grid;
     justify-items: left;
     grid-template-columns: repeat(2, 1fr);
     border: 1px solid white;
+    border-radius: 3px;
     width: 370px;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .stat span {
-    font-size: 2em;
-    margin: 3px 6px;
+    position: relative;
+    margin: 3px 7px;
+    width: 90%;
+    font-size: 1.8em;
+    text-align: left;
 }
 
 .weapon p {
@@ -150,14 +141,17 @@
         overflow-x: hidden;
     }
 
-    .s-sword, .sword{
+    .s-sword,
+    .sword {
         grid-gap: 2em 3em;
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media(max-width:1570px) {
-    .s-sword, .sword{
+
+    .s-sword,
+    .sword {
         grid-template-columns: repeat(3, 1fr);
     }
 }
@@ -192,36 +186,39 @@
         background-color: rgba(0, 0, 0, 0.7);
     }
 
-    .navbar.active>li {
+    .navbar.active > li {
         margin: 30px auto;
         font-size: 2em;
     }
 
-    .s-sword, .sword{
+    .s-sword,
+    .sword {
         grid-gap: 2em 4em;
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media(max-width:800px) {
-    .s-sword, .sword{
+
+    .s-sword,
+    .sword {
         grid-template-columns: repeat(1, 1fr);
     }
 }
 
 @media(max-height:600px) {
-    .navbar.active>li {
+    .navbar.active > li {
         margin: 20px auto;
         font-size: 1.5em;
     }
 }
 
-@keyframes animation{
-    0%{
-        opacity:0;
+@keyframes animation {
+    0% {
+        opacity: 0;
     }
-   
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
