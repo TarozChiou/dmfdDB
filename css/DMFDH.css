@@ -29,7 +29,7 @@
 
 .content {
     position: relative;
-    margin: 3em auto 0 auto;
+    margin: 2em auto 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,7 +89,7 @@ h2 {
 
 .log {
     padding: 1em;
-    width: 66%;
+    width: 77%;
     border: 1px solid white;
     font-size: 2em;
     line-height: 1.5em;
