@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-@font-face{
-    font-family:'Cambria';
-    src: url('font/Cambria.ttf') format=('truetype');
+
+@font-face {
+    font-family: 'Cambria';
+    src: local('fonts/Cambria.ttf') format('truetype');
+    src: url('Cambria.ttf') format('truetype');
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Cambria";
+    font-family: "Cambria", serif;
 }
 
 body {
@@ -19,7 +21,7 @@ body {
     background-size: cover;
 }
 
-li{
+li {
     list-style: none;
 }
 
