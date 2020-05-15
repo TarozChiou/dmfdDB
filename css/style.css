@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @font-face {
     font-family: 'webCambria';
     font-family: 'webLato';
@@ -31,13 +32,12 @@ body:before {
     -webkit-background-size: cover;
 }
 
-
 li {
     list-style: none;
 }
 
 li a {
-    font-family: "webLato";
+    font-family: "webLato", "lato";
     text-decoration: none;
 }
 
