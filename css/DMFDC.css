@@ -44,15 +44,13 @@
     position: relative;
     border: 2px solid white;
     border-radius: 5px;
-    height: 75vh;
-    width: 60vw;
     background-color: rgba(0, 0, 0, 0.8);
 }
 
 .BE {
     padding: 0 2%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     height: 100%;
     font-size: 1.5em;
@@ -62,7 +60,7 @@
 .BE .build,
 .BE .element {
     margin: auto 0;
-    width: 50%;
+    width: 45%;
 }
 
 .BE h4:not(:first-child) {
@@ -202,34 +200,9 @@
         margin-bottom: 0.1em;
     }
 
-    .details {
-        height: 60vh;
-        width: 95vw;
-    }
-
     .BE .build,
     .BE .element {
         width: 45%;
-    }
-}
-
-@media(max-height:1024px) {
-    html {
-        font-size: 16px;
-    }
-
-    h2 {
-        font-size: 4em;
-    }
-}
-
-@media(max-height: 768px) {
-    html {
-        font-size: 14px;
-    }
-
-    .BE h4:not(:first-child) {
-        margin-top: 3%;
     }
 }
 
@@ -250,16 +223,45 @@
     }
 }
 
+@media(min-height:1440px) {
+    .details {
+        height: 40vh;
+        width: 95vw;
+    }
+
+    .BE{
+        font-size: 1.2em;
+    }
+}
+
+@media(max-height:1024px) {
+    html {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 4em;
+    }
+}
+
 @media(max-height:768px) {
+    html {
+        font-size: 14px;
+    }
+
     .navbar.active>li {
         margin: 20px auto;
         font-size: 1.5em;
     }
+
+    .BE h4:not(:first-child) {
+        margin-top: 3%;
+    }
 }
 
 @media(max-height:500px) {
-    .BE{
-        font-size: 0.8em;
+    .BE {
+        font-size: 1em;
     }
 }
 
