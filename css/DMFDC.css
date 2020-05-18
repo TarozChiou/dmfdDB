@@ -181,9 +181,7 @@
         margin: 30px auto;
         font-size: 2em;
     }
-}
 
-@media(max-width:1300px) {
     .content {
         justify-content: center;
         flex-direction: reverse;
@@ -209,6 +207,7 @@
     }
 }
 
+/* default setting based on ipad mini */
 @media (orientation: landscape) {
     img {
         max-width: 30vw;
@@ -219,10 +218,9 @@
         width: 95vw;
     }
 }
-
 @media (orientation: portrait) {
     img {
-        max-width: 65vw;
+        max-width: 50vw;
     }
 }
 
@@ -241,13 +239,20 @@
         font-size: 1.5em;
     }
 }
+/* note8 landscapes */
+@media(max-height:500px) {
+    .BE {
+        font-size: 1em;
+    }
+}
 
+/* ipad mini screen */
 @media(max-height:1024px) {
     h2 {
         font-size: 4em;
     }
 }
-
+/* ipad mini screen */
 @media(max-height:768px) {
     html {
         font-size: 14px;
@@ -260,12 +265,6 @@
 
     .BE h4:not(:first-child) {
         margin-top: 3%;
-    }
-}
-/* note8 landscapes */
-@media(max-height:500px) {
-    .BE {
-        font-size: 1em;
     }
 }
 
