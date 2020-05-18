@@ -7,13 +7,11 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-height: 80vh;
 
     animation: animation .5s;
 }
 
 .character {
-    position: relative;
     margin-top: 2em;
     display: flex;
     justify-content: center;
@@ -25,6 +23,7 @@
 }
 
 .imgbox {
+    position: relative;
     display: flex;
     align-items: center;
 }
@@ -201,7 +200,7 @@ img {
     }
 
     img {
-        max-width: 60vw;
+        max-width: 100%;
     }
 
     .textbox {
