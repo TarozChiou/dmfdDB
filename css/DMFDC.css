@@ -1,0 +1,267 @@
+:root {
+    --emp: rgb(212, 0, 45);
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 80vh;
+
+    animation: animation .5s;
+}
+
+.character {
+    position: relative;
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+
+    animation: animation .5s;
+}
+
+.imgbox {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    max-width: 30vw;
+}
+
+.textbox {
+    position: relative;
+    margin: auto 0;
+    padding: 1.5em;
+    width: 50%;
+
+    font-size: 1.5em;
+}
+
+.textbox h2 {
+    margin-bottom: 0.3em;
+    display: inline-block;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    font-size: 3em;
+}
+
+.empBox {
+    display: none;
+}
+
+.empBox.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+
+    animation: animation .3s;
+}
+
+.details {
+    z-index: 21;
+    position: relative;
+    border: 2px solid white;
+    border-radius: 5px;
+    height: 70vh;
+    width: 60vw;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.BE {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+.BE .build, .BE .element {
+    margin: auto 0;
+    padding: 0 5%;
+    width: 50%;
+}
+
+.BE h4:not(:first-child) {
+    margin-top: 5%;
+}
+
+
+
+.details span {
+    position: absolute;
+    margin: 10px;
+    right: 0;
+    display: block;
+    height: 25px;
+    width: 25px;
+    background-image: url(../img/close.svg);
+    filter: invert(1);
+}
+
+.character:nth-of-type(1) .textbox h2 {
+    background-image: linear-gradient(to right, rgb(255, 0, 55), rgb(233, 0, 144));
+}
+
+.character:nth-of-type(2) .textbox h2 {
+    background-image: linear-gradient(to right, rgb(0, 238, 255), rgb(0, 68, 255));
+}
+
+.character:nth-of-type(3) .textbox h2 {
+    background-image: linear-gradient(to right, rgb(255, 0, 221), rgb(228, 0, 87));
+}
+
+.character:nth-of-type(4) .textbox h2 {
+    background-image: linear-gradient(to right, rgb(204, 0, 255), rgb(184, 0, 138));
+}
+
+.textbox p {
+    line-height: 1.2em;
+}
+
+.textbox .btn {
+    margin: 20px 0;
+    padding: 10px 15px;
+    display: inline-block;
+
+    border: 1px solid rgb(255, 0, 85);
+    border-radius: 5px;
+    color: rgb(255, 0, 85);
+    background: transparent;
+
+    font-size: 1em;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.textbox .btn:hover {
+    color: white;
+    background-color: rgb(255, 0, 85);
+}
+
+@media(max-width:1300px) {
+    html{
+        font-size: 14px;
+    }
+
+    header {
+        padding: 0.5em 5em;
+    }
+
+    .navicon {
+        margin-right: 40px;
+        display: block;
+        cursor: pointer;
+    }
+
+    .navbar {
+        display: none;
+        animation: animation .3s;
+    }
+
+    .navbar.active {
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .navbar.active>li {
+        margin: 30px auto;
+        font-size: 2em;
+    }
+}
+
+@media(max-width:1000px) {
+    .content {
+        justify-content: center;
+        flex-direction: reverse;
+    }
+
+    .character {
+        margin: 5em 0;
+        ;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    img {
+        max-width: 40vw;
+    }
+
+    .textbox {
+        padding: 0;
+        width: 85%;
+    }
+
+    .textbox h2 {
+        margin-bottom: 0.1em;
+    }
+    .details {
+        height: 80vh;
+        width: 90vw;
+    }
+
+    .BE .build, .BE .element {
+        width: 45%;
+    }
+}
+
+@media(max-width:800px) {
+    .title {
+        display: none;
+    }
+
+    .characters {
+        grid-gap: 0em 3em;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    h2 {
+        font-size: 4em;
+    }
+}
+
+@media(max-height:780px) {
+    body {
+        overflow: visible;
+    }
+}
+
+@media(max-height:600px) {
+    .navbar.active>li {
+        margin: 20px auto;
+        font-size: 1.5em;
+    }
+}
+
+@keyframes animation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
