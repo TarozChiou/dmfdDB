@@ -236,11 +236,15 @@ img {
     }
 }
 
-/* @media(min-height: 1024px){
+@media(max-height: 768px){
     html{
-        font-size: 18px;
+        font-size: 14px;
     }
-} */
+
+    .BE h4:not(:first-child) {
+        margin-top: 3%;
+    }
+}
 
 @media(max-height:600px) {
     .navbar.active>li {
