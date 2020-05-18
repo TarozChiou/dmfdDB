@@ -200,7 +200,8 @@ img {
     }
 
     img {
-        max-width: 60%;
+        margin:0 auto;
+        width: 100%;
     }
 
     .textbox {
