@@ -186,10 +186,7 @@ img {
     }
 }
 
-@media(max-width:1000px) {
-    html{
-        font-size: 20px;
-    }
+@media(max-width:1300px) {
     .content {
         justify-content: center;
         flex-direction: reverse;
@@ -224,6 +221,10 @@ img {
 }
 
 @media(max-width:800px) {
+    html{
+        font-size: 20px;
+    }
+
     .title {
         display: none;
     }
