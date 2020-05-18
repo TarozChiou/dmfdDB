@@ -219,9 +219,26 @@ img {
     }
 }
 
-@media(min-height:1000px){
+@media(max-height: 1024px){
     html{
         font-size: 20px;
+    }
+}
+
+@media(min-width:768px) and (min-height:1024px){
+    img {
+        max-width: 70vw;
+    }
+}
+
+@media(min-width:1024px) and (min-height:768px){
+    img {
+        max-width: 30vw;
+    }
+
+    .details {
+        height: 90vh;
+        width: 95vw;
     }
 }
 
