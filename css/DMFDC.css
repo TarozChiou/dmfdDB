@@ -196,7 +196,6 @@ img {
     }
 
     .character {
-        margin-bottom: 2em 0;
         flex-direction: column-reverse;
         text-align: center;
     }
