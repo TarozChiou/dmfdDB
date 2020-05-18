@@ -235,6 +235,10 @@ img {
     .BE h4:not(:first-child) {
         margin-top: 3%;
     }
+
+    /* .BE {
+        font-size: 1em;
+    } */
 }
 
 @media (orientation: landscape) {
@@ -243,7 +247,7 @@ img {
     }
 
     .details {
-        height: 85vh;
+        height: 80vh;
         width: 95vw;
     }
 
@@ -260,14 +264,10 @@ img {
     }
 }
 
-@media(max-height:700px) {
+@media(max-height:768px) {
     .navbar.active>li {
         margin: 20px auto;
         font-size: 1.5em;
-    }
-
-    .BE {
-        font-size: 1em;
     }
 }
 
