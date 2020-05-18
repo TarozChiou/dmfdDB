@@ -48,6 +48,7 @@
     height: 70vh;
     width: 95vw;
     background-color: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
 }
 
 .BE {
@@ -252,6 +253,10 @@
 
 /* ipad mini screen */
 @media(max-height:1024px) {
+    html {
+        font-size: 15px;
+    }
+
     h2 {
         font-size: 4em;
     }
@@ -269,6 +274,18 @@
 
     .BE h4:not(:first-child) {
         margin-top: 3%;
+    }
+}
+
+@media(max-height:630px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media(max-height:560px) {
+    html {
+        font-size: 10px;
     }
 }
 
