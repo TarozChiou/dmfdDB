@@ -31,7 +31,7 @@
     left: 0;
 
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
     height: 100vh;
@@ -44,6 +44,8 @@
     position: relative;
     border: 2px solid white;
     border-radius: 5px;
+    height: 70vh;
+    width: 95vw;
     background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -202,7 +204,7 @@
 
     .BE .build,
     .BE .element {
-        width: 45%;
+        width: 48%;
     }
 }
 
@@ -223,6 +225,7 @@
     }
 }
 
+/* note8 screen */
 @media(min-height:1300px) {
     .details {
         height: 40vh;
@@ -235,10 +238,6 @@
 }
 
 @media(max-height:1024px) {
-    html {
-        font-size: 16px;
-    }
-
     h2 {
         font-size: 4em;
     }
@@ -258,7 +257,7 @@
         margin-top: 3%;
     }
 }
-
+/* note8 landscapes */
 @media(max-height:500px) {
     .BE {
         font-size: 1em;
