@@ -44,14 +44,15 @@
     position: relative;
     border: 2px solid white;
     border-radius: 5px;
-    height: 70vh;
+    height: 75vh;
     width: 60vw;
     background-color: rgba(0, 0, 0, 0.8);
 }
 
 .BE {
+    padding: 0 2%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     height: 100%;
     font-size: 1.5em;
@@ -60,7 +61,6 @@
 
 .BE .build, .BE .element {
     margin: auto 0;
-    padding: 0 5%;
     width: 50%;
 }
 
@@ -210,8 +210,8 @@ img {
     }
 
     .details {
-        height: 70vh;
-        width: 90vw;
+        height: 60vh;
+        width: 95vw;
     }
 
     .BE .build, .BE .element {
