@@ -23,7 +23,6 @@
 }
 
 .imgbox {
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,6 +55,7 @@ img {
 }
 
 .empBox.active {
+    z-index: 21;
     position: fixed;
     top: 0;
     left: 0;
@@ -71,7 +71,6 @@ img {
 }
 
 .details {
-    z-index: 21;
     position: relative;
     border: 2px solid white;
     border-radius: 5px;
@@ -110,6 +109,7 @@ img {
     width: 25px;
     background-image: url(../img/close.svg);
     filter: invert(1);
+    cursor: pointer;
 }
 
 .character:nth-of-type(1) .textbox h2 {
