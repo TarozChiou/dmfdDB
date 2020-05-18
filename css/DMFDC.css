@@ -69,8 +69,6 @@
     margin-top: 5%;
 }
 
-
-
 .details span {
     position: absolute;
     margin: 10px;
@@ -195,7 +193,7 @@ img {
     }
 
     .character {
-        margin: 2em 0;
+        margin-bottom: 2em 0;
         flex-direction: column-reverse;
         text-align: center;
     }
