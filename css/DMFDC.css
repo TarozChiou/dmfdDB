@@ -59,7 +59,8 @@
     text-align: left;
 }
 
-.BE .build, .BE .element {
+.BE .build,
+.BE .element {
     margin: auto 0;
     width: 50%;
 }
@@ -214,12 +215,13 @@ img {
         width: 95vw;
     }
 
-    .BE .build, .BE .element {
+    .BE .build,
+    .BE .element {
         width: 45%;
     }
 }
 
-@media(max-width:1024px) and (max-height:768px){
+@media(max-width:1024px) and (max-height:768px) {
     img {
         max-width: 30vw;
     }
@@ -230,19 +232,21 @@ img {
     }
 }
 
-@media(max-height:1024px){
+@media(max-height:1024px) {
     h2 {
         font-size: 4em;
     }
 }
 
-@media(max-height: 768px){
-    html{
-        font-size: 14px;
-    }
-
+@media(max-height: 768px) {
     .BE h4:not(:first-child) {
         margin-top: 3%;
+    }
+}
+
+@media (orientation: landscape) {
+    html {
+        font-size: 14px;
     }
 }
 
