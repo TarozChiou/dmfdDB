@@ -219,7 +219,7 @@ img {
 
 @media(max-height:1024px) {
     html {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     h2 {
@@ -235,10 +235,6 @@ img {
     .BE h4:not(:first-child) {
         margin-top: 3%;
     }
-
-    /* .BE {
-        font-size: 1em;
-    } */
 }
 
 @media (orientation: landscape) {
