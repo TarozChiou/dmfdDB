@@ -223,7 +223,7 @@
     }
 }
 
-@media(min-height:1440px) {
+@media(min-height:1300px) {
     .details {
         height: 40vh;
         width: 95vw;
