@@ -219,48 +219,26 @@ img {
     }
 }
 
-@media(min-height: 1024px){
-    html{
-        font-size: 20px;
-    }
-}
-
-@media(orientation: landscape){
-    html{
-        font-size: 16px;
-    }
-}
-
-@media(max-width:768px) and (max-height:1024px){
-    img {
-        max-width: 70vw;
-    }
-}
-
 @media(max-width:1024px) and (max-height:768px){
     img {
         max-width: 30vw;
     }
 
     .details {
-        height: 90vh;
+        height: 80vh;
         width: 95vw;
     }
 }
 
-@media(max-width:800px) {
-    .title {
-        display: none;
-    }
-
+@media(max-height:1024px){
     h2 {
         font-size: 4em;
     }
 }
 
-@media(max-height:780px) {
-    body {
-        overflow: visible;
+@media(min-height: 1024px){
+    html{
+        font-size: 20px;
     }
 }
 
