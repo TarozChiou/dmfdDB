@@ -69,6 +69,8 @@
     margin-top: 5%;
 }
 
+
+
 .details span {
     position: absolute;
     margin: 10px;
@@ -193,13 +195,13 @@ img {
     }
 
     .character {
-        margin: 5em 0;
+        margin: 2em 0;
         flex-direction: column-reverse;
         text-align: center;
     }
 
     img {
-        max-width: 60vw;
+        max-width: 60%;
     }
 
     .textbox {
