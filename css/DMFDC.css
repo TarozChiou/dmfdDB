@@ -146,10 +146,6 @@
     align-items: center;
 }
 
-img {
-    max-width: 30vw;
-}
-
 @media(max-width:1300px) {
     header {
         padding: 0.5em 5em;
@@ -246,12 +242,6 @@ img {
         height: 80vh;
         width: 95vw;
     }
-
-    .BE {
-        padding: 2%;
-        height: 100%;
-        font-size: 1.2em;
-    }
 }
 
 @media (orientation: portrait) {
@@ -264,6 +254,12 @@ img {
     .navbar.active>li {
         margin: 20px auto;
         font-size: 1.5em;
+    }
+}
+
+@media(max-height:500px) {
+    .BE{
+        font-size: 1em;
     }
 }
 
