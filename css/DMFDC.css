@@ -25,6 +25,7 @@
 .imgbox {
     position: relative;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -200,7 +201,6 @@ img {
     }
 
     img {
-        margin:0 auto;
         max-width: 60%;
     }
 
