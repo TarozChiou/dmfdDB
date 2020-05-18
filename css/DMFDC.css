@@ -219,9 +219,15 @@ img {
     }
 }
 
-@media(max-height: 1024px){
+@media(min-height: 1024px){
     html{
         font-size: 20px;
+    }
+}
+
+@media(orientation: landscape){
+    html{
+        font-size: 16px;
     }
 }
 
