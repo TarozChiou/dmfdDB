@@ -222,12 +222,16 @@
 
 @media (orientation: portrait) {
     img {
-        max-width: 70vw;
+        max-width: 65vw;
     }
 }
 
 /* note8 screen */
 @media(min-height:1300px) {
+    img {
+        max-width: 80vw;
+    }
+
     .details {
         height: 40vh;
         width: 95vw;
