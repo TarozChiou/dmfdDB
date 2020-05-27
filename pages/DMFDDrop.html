@@ -1,0 +1,2522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/DMFDD.css">
+    <link rel="apple-touch-icon" sizes="76x76" href="../ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../ico/favicon-16x16.png">
+    <link rel="manifest" href="../ico/site.webmanifest">
+    <link rel="mask-icon" href="../ico/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#b91d47">
+    <meta name="theme-color" content="#343434">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <title>Quest Drop List</title>
+</head>
+
+<body>
+    <header>
+        <a href="/index.html">
+            <img class="logo" src="../img/logo.png" class="logo">
+        </a>
+        <nav class="toggle">
+            <ul class="navbar">
+                <li><a href="DMFDCharacters.html">Characters</a></li>
+                <li><a href="DMFDWeapons.html">Weapons</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="DMFDDrop.html" class="active">Quest Drop</a></li>
+                <li><a href="DMFDBoss.html">Bosses</a></li>
+            </ul>
+            <span class="navicon" id="navicon" onclick="navtoggle()"></span>
+        </nav>
+    </header>
+
+    <main class="content">
+        <h1 class="title">Quest Drop List</h1>
+        <section class="selector">
+            <select id="questSelect" onchange="questSelector()">
+                <option value="all">All Quest</option>
+                <option value="ogreF">Ogre Fort</option>
+                <option value="sot">Sea of Tumulet</option>
+                <option value="ud">Undying Dragons</option>
+                <option value="mfd">Marked For Death</option>
+            </select>
+        </section>
+
+        <i class="tips">You can use Ctrl+F (find in page) to search specific items.</i>
+
+        <section class="drop-lists">
+
+            <section id="ogreF" class="lists">
+                <h2 class="quest">Ogre Fort</h2>
+                <!-- of 70~110-->
+                <div id="lv110" class="list">
+                    <div class="type">
+                        <div class="rarity">
+                            <h3>Lv.110</h3>
+                        </div>
+                        <div class="B_chest">
+                            <h3>Boss Chest</h3>
+                        </div>
+                        <div class="N_chest">
+                            <h3>Normal Chest</h3>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>SR</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>-</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>Potion +1</span>
+                            <span>Raspberry Bread +</span>
+                            <span>Monster Steak +</span>
+                            <span>Plum Rice Ball +</span>
+                            <span>Apple Pie +</span>
+                            <span>Steel Bracer +6</span>
+                            <span>Scale Gauntlet +6</span>
+                            <span>Leather Belt +6</span>
+                            <span>Colorful Belt +6</span>
+                            <span>Cooling Scarf +6</span>
+                            <span>Fur Scarf +6</span>
+                            <span>Critter Companion Pin +6</span>
+                            <span>Demonic Pin +6</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R++</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Heavy Schiavona</span>
+                            <span>Caladbolg</span>
+                            <span>Ranseur</span>
+                            <span>Móralltach</span>
+                            <span>Fire Codex</span>
+                            <span>Dendera Light</span>
+                            <span>Ogre's Bangle +10</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>Miracle Powder</span>
+                            <span>Heart Earrings +8</span>
+                            <span>Relic of Power</span>
+                            <span>Iron Shackles +8</span>
+                            <span>Scale Gauntlet +5</span>
+                            <span>Colorful Belt +5</span>
+                            <span>Fur Scarf +5</span>
+                            <span>Demonic Pin +5</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R+</span>
+                        </div>
+                        <div class="B_chest">
+                            <span id="r">Yoshimitsu</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>-</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>N</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Schiavona +2</span>
+                            <span>Scramasax +2</span>
+                            <span>Gisarme +2</span>
+                            <span>Beagalltach +2</span>
+                            <span>Kawahagi Knife +2</span>
+                            <span>Fire Biblion +2</span>
+                            <span>Hathor Temple Mural +2</span>
+                            <span>Dragonite</span>
+                            <span>Ogre Eyeball</span>
+
+                        </div>
+                        <div class="N_chest">
+                            <span>Steel Bangle +6</span>
+                            <span>Ogre's Bangle +5</span>
+                            <span>Perfect Holy Water</span>
+                            <span>Potion</span>
+                            <span>Raspberry Bread</span>
+                            <span>Monster Steak</span>
+                            <span>Plum Rice Ball</span>
+                            <span>Heart Earrings +7</span>
+                            <span>Apple Pie</span>
+                            <span>Panacea +1</span>
+                            <span>Panacea +2</span>
+                            <span>Iron Shackles +7</span>
+                            <span>Steel Bracer +5</span>
+                            <span>Scale Gauntlet +4</span>
+                            <span>Leather Belt +5</span>
+                            <span>Colorful Belt +4</span>
+                            <span>Cooling Scarf +5</span>
+                            <span>Fur Scarf +4</span>
+                            <span>Critter Companion Pin +5</span>
+                            <span>Demonic Pin +4</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="lv100" class="list">
+                    <div class="type">
+                        <div class="rarity">
+                            <h3>Lv.100</span>
+                        </div>
+                        <div class="B_chest">
+                            <h3>Boss Chest</h3>
+                        </div>
+                        <div class="N_chest">
+                            <h3>Normal Chest</h3>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>SR</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>-</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>Potion +1</span>
+                            <span>Raspberry Bread +</span>
+                            <span>Monster Steak +</span>
+                            <span>Plum Rice Ball +</span>
+                            <span>Apple Pie +</span>
+                            <span>Steel Bracer +6</span>
+                            <span>Scale Gauntlet +6</span>
+                            <span>Leather Belt +6</span>
+                            <span>Colorful Belt +6</span>
+                            <span>Cooling Scarf +6</span>
+                            <span>Fur Scarf +6</span>
+                            <span>Critter Companion Pin +6</span>
+                            <span>Demonic Pin +6</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R++</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Schiavona +2</span>
+                            <span>Scramasax +2</span>
+                            <span>Gisarme +2</span>
+                            <span>Beagalltach +2</span>
+                            <span>Fire Biblion +2</span>
+                            <span>Hathor Temple Mural +2</span>
+                            <span>Ogre's Bangle +10</span>
+                            <span>Ogre Eyeball</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>Miracle Powder</span>
+                            <span>Heart Earrings +8</span>
+                            <span>Relic of Power</span>
+                            <span>Iron Shackles +8</span>
+                            <span>Scale Gauntlet +5</span>
+                            <span>Colorful Belt +5</span>
+                            <span>Fur Scarf +5</span>
+                            <span>Demonic Pin +5</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R+</span>
+                        </div>
+                        <div class="B_chest">
+                            <span id="r">Kawahagi Knife +2</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>-</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>N</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Schiavona +1</span>
+                            <span>Scramasax +1</span>
+                            <span>Gisarme +1</span>
+                            <span>Beagalltach +1</span>
+                            <span>Kawahagi Knife +1</span>
+                            <span>Fire Biblion +1</span>
+                            <span>Hathor Temple Mural +1</span>
+                            <span>Dragonite</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>Steel Bangle +6</span>
+                            <span>Ogre's Bangle +5</span>
+                            <span>Perfect Holy Water</span>
+                            <span>Raspberry Bread</span>
+                            <span>Monster Steak</span>
+                            <span>Plum Rice Ball</span>
+                            <span>Heart Earrings +7</span>
+                            <span>Apple Pie</span>
+                            <span>Panacea +1</span>
+                            <span>Panacea +2</span>
+                            <span>Iron Shackles +7</span>
+                            <span>Steel Bracer +5</span>
+                            <span>Scale Gauntlet +4</span>
+                            <span>Leather Belt +5</span>
+                            <span>Colorful Belt +4</span>
+                            <span>Cooling Scarf +5</span>
+                            <span>Fur Scarf +4</span>
+                            <span>Critter Companion Pin +5</span>
+                            <span>Demonic Pin +4</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="lv90" class="list">
+                    <div class="type">
+                        <div class="rarity">
+                            <h3>Lv.90</h3>
+                        </div>
+                        <div class="B_chest">
+                            <h3>Boss Chest</h3>
+                        </div>
+                        <div class="N_chest">
+                            <h3>Normal Chest</h3>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>SR</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>-</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>Potion +1</span>
+                            <span>Raspberry Bread +</span>
+                            <span>Monster Steak +</span>
+                            <span>Plum Rice Ball +</span>
+                            <span>Apple Pie +</span>
+                            <span>Scale Gauntlet +5</span>
+                            <span>Colorful Belt +5</span>
+                            <span>Fur Scarf +5</span>
+                            <span>Demonic Pin +5</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R++</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Schiavona +1</span>
+                            <span>Scramasax +1</span>
+                            <span>Gisarme +1</span>
+                            <span>Beagalltach +1</span>
+                            <span>Fire Biblion +1</span>
+                            <span>Hathor Temple Mural +1</span>
+                            <span>Ogre's Bangle +9</span>
+                            <span>Ogre Eyeball</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>Miracle Powder</span>
+                            <span>Heart Earrings +7</span>
+                            <span>Relic of Power</span>
+                            <span>Iron Shackles +7</span>
+                            <span>Steel Bracer +5</span>
+                            <span>Leather Belt +5</span>
+                            <span>Cooling Scarf +5</span>
+                            <span>Critter Companion Pin +5</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R+</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Kawahagi Knife +1</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>-</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>N</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Schiavona</span>
+                            <span>Scramasax</span>
+                            <span>Gisarme</span>
+                            <span>Beagalltach</span>
+                            <span>Kawahagi Knife</span>
+                            <span>Fire Biblion</span>
+                            <span>Hathor Temple Mural</span>
+                            <span>Dragonite</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>Steel Bangle +5</span>
+                            <span>Ogre's Bangle +4</span>
+                            <span>Perfect Holy Water</span>
+                            <span>Potion</span>
+                            <span>Raspberry Bread</span>
+                            <span>Monster Steak</span>
+                            <span>Heart Earrings +6</span>
+                            <span>Plum Rice Ball</span>
+                            <span>Apple Pie</span>
+                            <span>Panacea +1</span>
+                            <span>Panacea +2</span>
+                            <span>Iron Shackles +6</span>
+                            <span>Steel Bracer +4</span>
+                            <span>Scale Gauntlet +3</span>
+                            <span>Leather Belt +4</span>
+                            <span>Colorful Belt +3</span>
+                            <span>Cooling Scarf +4</span>
+                            <span>Fur Scarf +3</span>
+                            <span>Critter Companion Pin +4</span>
+                            <span>Demonic Pin +3</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="lv80" class="list">
+                    <div class="type">
+                        <div class="rarity">
+                            <h3>Lv.80</h3>
+                        </div>
+                        <div class="B_chest">
+                            <h3>Boss Chest</h3>
+                        </div>
+                        <div class="N_chest">
+                            <h3>Normal Chest</h3>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>SR</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>-</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>Potion +1</span>
+                            <span>Raspberry Bread +</span>
+                            <span>Monster Steak +</span>
+                            <span>Plum Rice Ball +</span>
+                            <span>Apple Pie +</span>
+                            <span>Scale Gauntlet +4</span>
+                            <span>Colorful Belt +4</span>
+                            <span>Fur Scarf +4</span>
+                            <span>Demonic Pin +4</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R++</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Shashka</span>
+                            <span>Froberge</span>
+                            <span>Holy Axe</span>
+                            <span>Balanced Blade</span>
+                            <span>Fire Scroll +3</span>
+                            <span>??? Lantern</span>
+                            <span>Ogre's Bangle +8</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>Miracle Powder</span>
+                            <span>Heart Earrings +6</span>
+                            <span>Relic of Power</span>
+                            <span>Iron Shackles +7</span>
+                            <span>Steel Bracer +4</span>
+                            <span>Leather Belt +4</span>
+                            <span>Cooling Scarf +4</span>
+                            <span>Critter Companion Pin +4</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R+</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Cross Blade</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>-</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>N</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Cossack Knife +2</span>
+                            <span>Flamberge +2</span>
+                            <span>War Axe +2</span>
+                            <span>Two-Handed Blade +2</span>
+                            <span>Tempered Ninja Swords +2</span>
+                            <span>Fire Scroll +2</span>
+                            <span>Fire Lantern +2</span>
+                            <span>Dragonite</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>Steel Bangle +4</span>
+                            <span>Ogre's Bangle +4</span>
+                            <span>Perfect Holy Water</span>
+                            <span>Raspberry Bread</span>
+                            <span>Monster Steak</span>
+                            <span>Heart Earrings +5</span>
+                            <span>Plum Rice Ball</span>
+                            <span>Apple Pie</span>
+                            <span>Panacea +1</span>
+                            <span>Panacea +2</span>
+                            <span>Iron Shackles +5</span>
+                            <span>Steel Bracer +3</span>
+                            <span>Scale Gauntlet +2</span>
+                            <span>Leather Belt +3</span>
+                            <span>Colorful Belt +2</span>
+                            <span>Cooling Scarf +3</span>
+                            <span>Fur Scarf +2</span>
+                            <span>Critter Companion Pin +3</span>
+                            <span>Demonic Pin +2</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="lv70" class="list">
+                    <div class="type">
+                        <div class="rarity">
+                            <h3>Lv.70</h3>
+                        </div>
+                        <div class="B_chest">
+                            <h3>Boss Chest</h3>
+                        </div>
+                        <div class="N_chest">
+                            <h3>Normal Chest</h3>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>SR</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>-</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>Potion +1</span>
+                            <span>Raspberry Bread +</span>
+                            <span>Monster Steak +</span>
+                            <span>Plum Rice Ball +</span>
+                            <span>Apple Pie +</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R++</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Cossack Knife +2</span>
+                            <span>Flamberge +2</span>
+                            <span>War Axe +2</span>
+                            <span>Two-Handed Blade +2</span>
+                            <span>Fire Scroll +2</span>
+                            <span>Fire Lantern +2</span>
+                            <span>Ogre's Bangle +7</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>Ogre's Bangle +4</span>
+                            <span>Miracle Powder</span>
+                            <span>Heart Earrings +5</span>
+                            <span>Relic of Power</span>
+                            <span>Iron Shackles +6</span>
+                            <span>Steel Bracer +3</span>
+                            <span>Scale Gauntlet +3</span>
+                            <span>Leather Belt +3</span>
+                            <span>Colorful Belt +3</span>
+                            <span>Cooling Scarf +3</span>
+                            <span>Fur Scarf +3</span>
+                            <span>Critter Companion Pin +3</span>
+                            <span>Demonic Pin +3</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R+</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Tempered Ninja Swords +2</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>-</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>N</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Cossack Knife +1</span>
+                            <span>Flamberge +1</span>
+                            <span>War Axe +1</span>
+                            <span>Two-Handed Blade +1</span>
+                            <span>Tempered Ninja Swords +1</span>
+                            <span>Fire Scroll +1</span>
+                            <span>Fire Lantern +1</span>
+                            <span>Dragonite</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>Steel Bangle +3</span>
+                            <span>Ogre's Bangle +3</span>
+                            <span>Perfect Holy Water</span>
+                            <span>Potion</span>
+                            <span>Raspberry Bread</span>
+                            <span>Heart Earrings +4</span>
+                            <span>Monster Steak</span>
+                            <span>Plum Rice Ball</span>
+                            <span>Apple Pie</span>
+                            <span>Panacea +1</span>
+                            <span>Panacea +2</span>
+                            <span>Iron Shackles +4</span>
+                            <span>Steel Bracer +2</span>
+                            <span>Scale Gauntlet +1</span>
+                            <span>Leather Belt +2</span>
+                            <span>Colorful Belt +1</span>
+                            <span>Cooling Scarf +2</span>
+                            <span>Fur Scarf +1</span>
+                            <span>Critter Companion Pin +2</span>
+                            <span>Demonic Pin +1</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sot" class="lists">
+                <h2 class="quest">Sea of Tumult</h2>
+
+                <div id="lv110" class="list">
+                    <div class="type">
+                        <div class="rarity">
+                            <h3>Lv.110</h3>
+                        </div>
+                        <div class="B_chest">
+                            <h3>Boss Chest</h3>
+                        </div>
+                        <div class="N_chest">
+                            <h3>Normal Chest</h3>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>SR</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>-</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>Bizarre Bone +</span>
+                            <span>Flower Brooch +3</span> </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R++</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Necklace of Cleansing +6</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>Leather Choker +8</span>
+                            <span>Ring of Life +7</span>
+                            <span>Panacea +1</span>
+                            <span>Panacea +2</span>
+                            <span>Hastan Anklet +8</span>
+                            <span>Fragrant Brooch +4</span>
+                            <span>Popul-aura Pin +3</span> </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R+</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Ipetam</span>
+                            <span>ERClaiomh Solais</span>
+                            <span>Couteau de Breche</span>
+                            <span>RGold Ilwoon</span>
+                            <span>Ice Codex</span>
+                            <span>ERCursed Lantern</span>
+                            <span>Pendant of Hope +8</span>
+                            <span>Uhuchiku</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>Leather Choker +7</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Uhuchiku</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>-</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>N</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Guandao +2</span>
+                            <span>Backsword +2</span>
+                            <span>Voulge +2</span>
+                            <span>Ilwoon +2</span>
+                            <span>Chikusaji +2</span>
+                            <span>Ice Biblion +2</span>
+                            <span>Dark Lantern +2</span>
+                            <span>Warrior's Necklace +8</span>
+                            <span>Plant Ring +9</span>
+                            <span>Animal Earrings +9</span>
+                            <span>Bluesky Amulet +9</span>
+                            <span>Animal Eye</span>
+                            <span>Dragonite</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>Steel Bangle +3</span>
+                            <span>Ogre's Bangle +3</span>
+                            <span>Ogre's Bangle +5</span>
+                            <span>Leather Choker +6</span>
+                            <span>Ring of Life +5</span>
+                            <span>Ring of Life +6</span>
+                            <span>Raspberry Bread</span>
+                            <span>Monster Steak</span>
+                            <span>Plum Rice Ball</span>
+                            <span>Apple Pie</span>
+                            <span>Relic of Speed</span>
+                            <span>Smelling Salts +</span>
+                            <span>Confusion-stopper Bone</span>
+                            <span>Confusion-stopper Bone +</span>
+                            <span>Bizarre Bone</span>
+                            <span>Hastan Anklet +7</span>
+                            <span>Flower Brooch</span>
+                            <span>Flower Brooch +1</span>
+                            <span>Flower Brooch +2</span>
+                            <span>Fragrant Brooch +2</span>
+                            <span>Fragrant Brooch +3</span>
+                            <span>Popul-aura Pin +2</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="lv100" class="list">
+                    <div class="type">
+                        <div class="rarity">
+                            <h3>Lv.100</h3>
+                        </div>
+                        <div class="B_chest">
+                            <h3>Boss Chest</h3>
+                        </div>
+                        <div class="N_chest">
+                            <h3>Normal Chest</h3>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>SR</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>-</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>Bizarre Bone +</span>
+                            <span>Flower Brooch +3</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R++</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Necklace of Cleansing +6</span>
+                            <span>Animal Eye</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>Leather Choker +8</span>
+                            <span>Ring of Life +7</span>
+                            <span>Panacea +1</span>
+                            <span>Panacea +2</span>
+                            <span>Hastan Anklet +8</span>
+                            <span>Fragrant Brooch +4</span>
+                            <span>Popul-aura Pin +3</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R+</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Guandao +2</span>
+                            <span>Backsword +2</span>
+                            <span>Voulge +2</span>
+                            <span>Ilwoon +2</span>
+                            <span>Ice Biblion +2</span>
+                            <span>Dark Lantern +2</span>
+                            <span>Pendant of Hope +8</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>Leather Choker +7</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Chikusaji +2</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>-</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>N</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Guandao +1</span>
+                            <span>Backsword +1</span>
+                            <span>Voulge +1</span>
+                            <span>Ilwoon +1</span>
+                            <span>Chikusaji +1</span>
+                            <span>Ice Biblion +1</span>
+                            <span>Dark Lantern +1</span>
+                            <span>Warrior's Necklace +8</span>
+                            <span>Plant Ring +9</span>
+                            <span>Animal Earrings +9</span>
+                            <span>Bluesky Amulet +9</span>
+                            <span>Dragonite</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>Steel Bangle +3</span>
+                            <span>Ogre's Bangle +3</span>
+                            <span>Ogre's Bangle +5</span>
+                            <span>Leather Choker +6</span>
+                            <span>Ring of Life +5</span>
+                            <span>Ring of Life +6</span>
+                            <span>Raspberry Bread</span>
+                            <span>Monster Steak</span>
+                            <span>Plum Rice Ball</span>
+                            <span>Apple Pie</span>
+                            <span>Relic of Speed</span>
+                            <span>Smelling Salts +</span>
+                            <span>Confusion-stopper Bone</span>
+                            <span>Confusion-stopper Bone +</span>
+                            <span>Bizarre Bone</span>
+                            <span>Hastan Anklet +7</span>
+                            <span>Flower Brooch</span>
+                            <span>Flower Brooch +1</span>
+                            <span>Flower Brooch +2</span>
+                            <span>Fragrant Brooch +2</span>
+                            <span>Fragrant Brooch +3</span>
+                            <span>Popul-aura Pin +2</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="lv90" class="list">
+                    <div class="type">
+                        <div class="rarity">
+                            <h3>Lv.90</h3>
+                        </div>
+                        <div class="B_chest">
+                            <h3>Boss Chest</h3>
+                        </div>
+                        <div class="N_chest">
+                            <h3>Normal Chest</h3>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>SR</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>-</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>Bizarre Bone +</span>
+                            <span>Flower Brooch +3</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R++</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Necklace of Cleansing +5</span>
+                            <span>Animal Eye</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>Leather Choker +7</span>
+                            <span>Ring of Life +6</span>
+                            <span>Panacea +1</span>
+                            <span>Panacea +2</span>
+                            <span>Hastan Anklet +7</span>
+                            <span>Fragrant Brooch +4</span>
+                            <span>Popul-aura Pin +3</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R+</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Guandao +1</span>
+                            <span>Backsword +1</span>
+                            <span>Voulge +1</span>
+                            <span>Ilwoon +1</span>
+                            <span>Ice Biblion +1</span>
+                            <span>Dark Lantern +1</span>
+                            <span>Pendant of Hope +7</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>Leather Choker +6</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Chikusaji +1</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>-</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>N</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Guandao</span>
+                            <span>Backsword</span>
+                            <span>Voulge</span>
+                            <span>Ilwoon</span>
+                            <span>Chikusaji</span>
+                            <span>Ice Biblion</span>
+                            <span>Dark Lantern</span>
+                            <span>Warrior's Necklace +7</span>
+                            <span>Dragonite</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>Steel Bangle +2</span>
+                            <span>Ogre's Bangle +2</span>
+                            <span>Ogre's Bangle +4</span>
+                            <span>Leather Choker +5</span>
+                            <span>Ring of Life +4</span>
+                            <span>Ring of Life +5</span>
+                            <span>Raspberry Bread</span>
+                            <span>Monster Steak</span>
+                            <span>Plum Rice Ball</span>
+                            <span>Apple Pie</span>
+                            <span>Relic of Speed</span>
+                            <span>Smelling Salts +</span>
+                            <span>Confusion-stopper Bone</span>
+                            <span>Confusion-stopper Bone +</span>
+                            <span>OBizarre Bone</span>
+                            <span>Hastan Anklet +6</span>
+                            <span>Flower Brooch</span>
+                            <span>Flower Brooch +1</span>
+                            <span>Flower Brooch +2</span>
+                            <span>Fragrant Brooch +2</span>
+                            <span>Fragrant Brooch +3</span>
+                            <span>GPopul-aura Pin +1</span>
+                            <span>GPopul-aura Pin +2</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="lv80" class="list">
+                    <div class="type">
+                        <div class="rarity">
+                            <h3>Lv.80</h3>
+                        </div>
+                        <div class="B_chest">
+                            <h3>Boss Chest</h3>
+                        </div>
+                        <div class="N_chest">
+                            <h3>Normal Chest</h3>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>SR</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>-</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>Bizarre Bone +</span>
+                            <span>Flower Brooch +3</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R++</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Guandao</span>
+                            <span>Zulfiqar</span>
+                            <span>Backsword</span>
+                            <span>Tizona</span>
+                            <span>Voulge</span>
+                            <span>Parashu</span>
+                            <span>llwoon</span>
+                            <span>Dáinsleif</span>
+                            <span>Chantan Nakiri</span>
+                            <span>Iga Shuriken</span>
+                            <span>Ice Biblion</span>
+                            <span>Edda</span>
+                            <span>Dark Lantern</span>
+                            <span>Nebra Sky Disk</span>
+                            <span>Necklace of Cleansing +4</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>Leather Choker +6</span>
+                            <span>Ring of Life +5</span>
+                            <span>Panacea +1</span>
+                            <span>Panacea +2</span>
+                            <span>Hastan Anklet +6</span>
+                            <span>Fragrant Brooch +4</span>
+                            <span>Popul-aura Pin +3</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R+</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Chikusaji</span>
+                            <span>Pendant of Hope +6</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>Leather Choker +5</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>N</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Sabre +3</span>
+                            <span>Longsword +3</span>
+                            <span>Bardiche +3</span>
+                            <span>Gale Claymore</span>
+                            <span>Jitte +3</span>
+                            <span>Full Moon Ring +3</span>
+                            <span>Fire Tome +3</span>
+                            <span>Crystal Skull</span>
+                            <span>Warrior's Necklace +6</span>
+                            <span>Dragonite</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>Steel Bangle +2</span>
+                            <span>Ogre's Bangle +2</span>
+                            <span>Ogre's Bangle +4</span>
+                            <span>Leather Choker +4</span>
+                            <span>Ring of Life +3</span>
+                            <span>Ring of Life +4</span>
+                            <span>Raspberry Bread</span>
+                            <span>Monster Steak</span>
+                            <span>Plum Rice Ball</span>
+                            <span>Apple Pie</span>
+                            <span>Relic of Speed</span>
+                            <span>Smelling Salts +</span>
+                            <span>Confusion-stopper Bone</span>
+                            <span>Confusion-stopper Bone +</span>
+                            <span>Bizarre Bone</span>
+                            <span>Hastan Anklet +5</span>
+                            <span>Flower Brooch</span>
+                            <span>Flower Brooch +1</span>
+                            <span>Flower Brooch +2</span>
+                            <span>Fragrant Brooch +2</span>
+                            <span>Fragrant Brooch +3</span>
+                            <span>Popul-aura Pin +1</span>
+                            <span>Popul-aura Pin +2</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="lv70" class="list">
+                    <div class="type">
+                        <div class="rarity">
+                            <h3>Lv.70</h3>
+                        </div>
+                        <div class="B_chest">
+                            <h3>Boss Chest</h3>
+                        </div>
+                        <div class="N_chest">
+                            <h3>Normal Chest</h3>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>SR</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>-</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>Bizarre Bone +</span>
+                            <span>Flower Brooch +3</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R++</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Zulfiqar</span>
+                            <span>Tizona</span>
+                            <span>Parashu</span>
+                            <span>Dáinsleif</span>
+                            <span>Chantan Nakiri</span>
+                            <span>Iga Shuriken</span>
+                            <span>Edda</span>
+                            <span>Nebra Sky Disk</span>
+                            <span>Necklace of Cleansing +3</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>Leather Choker +5</span>
+                            <span>Ring of Life +4</span>
+                            <span>Panacea +1</span>
+                            <span>Panacea +2</span>
+                            <span>Hastan Anklet +5</span>
+                            <span>Fragrant Brooch +4</span>
+                            <span>Popul-aura Pin +3</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R+</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Pendant of Hope +5</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>Leather Choker +4</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>N</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Sabre +3</span>
+                            <span>Longsword +3</span>
+                            <span>Bardiche +3</span>
+                            <span>Gale Claymore</span>
+                            <span>Jitte +3</span>
+                            <span>Full Moon Ring +3</span>
+                            <span>Fire Tome +3</span>
+                            <span>Crystal Skull</span>
+                            <span>Warrior's Necklace +5</span>
+                            <span>Dragonite</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>Steel Bangle +2</span>
+                            <span>Ogre's Bangle +2</span>
+                            <span>Ogre's Bangle +3</span>
+                            <span>Leather Choker +3</span>
+                            <span>Ring of Life +2</span>
+                            <span>Ring of Life +3</span>
+                            <span>Raspberry Bread</span>
+                            <span>Monster Steak</span>
+                            <span>Plum Rice Ball</span>
+                            <span>Apple Pie</span>
+                            <span>Relic of Speed</span>
+                            <span>Smelling Salts +</span>
+                            <span>Confusion-stopper Bone</span>
+                            <span>Confusion-stopper Bone +</span>
+                            <span>Bizarre Bone</span>
+                            <span>Hastan Anklet +4</span>
+                            <span>Flower Brooch</span>
+                            <span>Flower Brooch +1</span>
+                            <span>Flower Brooch +2</span>
+                            <span>Fragrant Brooch +2</span>
+                            <span>Fragrant Brooch +3</span>
+                            <span>Popul-aura Pin +1</span>
+                            <span>Popul-aura Pin +2</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="ud" class="lists">
+                <!-- ud 70~110-->
+                <h2 class="quest">Undying Dragons</h2>
+                <div id="lv110" class="list">
+                    <div class="type">
+                        <div class="rarity">
+                            <h3>Lv.110</h3>
+                        </div>
+                        <div class="B_chest">
+                            <h3>Boss Chest</h3>
+                        </div>
+                        <div class="N_chest">
+                            <h3>Normal Chest</h3>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>SR</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>-</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>Prayer Charm +8</span>
+                            <span>Sorcerer's Charm +8</span> </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R++</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Fork of Good Fortune</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>Steel Bangle +8</span>
+                            <span>Plant Ring +8</span>
+                            <span>Prayer Charm +6</span>
+                            <span>Prayer Charm +7</span>
+                            <span>Relic of Faith</span>
+                            <span>Sorcerer's Charm +7</span>
+                            <span>Bizarre Bone +</span>
+                            <span>Giant's Ring +8</span>
+                            <span>Void Anklet +7</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R+</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Fragarach</span>
+                            <span>Lævateinn</span>
+                            <span>Gigant Axe</span>
+                            <span>Aroundight</span>
+                            <span>Reincarnation Tome</span>
+                            <span>Magatama</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>Panacea +1</span>
+                            <span>Panacea +2</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>-</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>Seven-Star Sword</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>N</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Estoc +2</span>
+                            <span>Arming Sword +2</span>
+                            <span>Pollaxe +2</span>
+                            <span>Cutlass +2</span>
+                            <span>Jonin Blade +2</span>
+                            <span>Wind Biblion +2</span>
+                            <span>Ica Stone +2</span>
+                            <span>Bravery Ring +8</span>
+                            <span>Engraved Earrings +8</span>
+                            <span>Eye Amulet +8</span>
+                            <span>Dragonite</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>Steel Bangle +6</span>
+                            <span>Steel Bangle +7</span>
+                            <span>Ogre's Bangle +5</span>
+                            <span>Demon's Pendant +3</span>
+                            <span>Plant Ring +6</span>
+                            <span>Plant Ring +7</span>
+                            <span>Miracle Powder</span>
+                            <span>Raspberry Bread</span>
+                            <span>Raspberry Bread +</span>
+                            <span>Monster Steak</span>
+                            <span>Monster Steak +</span>
+                            <span>Plum Rice Ball +</span>
+                            <span>Apple Pie</span>
+                            <span>Apple Pie +</span>
+                            <span>Prayer Charm +3</span>
+                            <span>Prayer Charm +4</span>
+                            <span>Prayer Charm +5</span>
+                            <span>Sorcerer's Charm +4</span>
+                            <span>Sorcerer's Charm +5</span>
+                            <span>Sorcerer's Charm +6</span>
+                            <span>Poison-stopper Bone</span>
+                            <span>Poison-stopper Bone +</span>
+                            <span>Bizarre Bone</span>
+                            <span>Giant's Ring +6</span>
+                            <span>Giant's Ring +7</span>
+                            <span>Void Anklet +6</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="lv100" class="list">
+                    <div class="type">
+                        <div class="rarity">
+                            <h3>Lv.100</h3>
+                        </div>
+                        <div class="B_chest">
+                            <h3>Boss Chest</h3>
+                        </div>
+                        <div class="N_chest">
+                            <h3>Normal Chest</h3>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>SR</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>-</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>Prayer Charm +8</span>
+                            <span>Sorcerer's Charm +8</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R++</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Fork of Good Fortune</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>Steel Bangle +8</span>
+                            <span>Plant Ring +8</span>
+                            <span>Prayer Charm +6</span>
+                            <span>Prayer Charm +7</span>
+                            <span>Relic of Faith</span>
+                            <span>Sorcerer's Charm +7</span>
+                            <span>Bizarre Bone +</span>
+                            <span>Giant's Ring +8</span>
+                            <span>Void Anklet +7</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R+</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Panzerstecher</span>
+                            <span>Blutgang</span>
+                            <span>Holy Pollaxe</span>
+                            <span>Briquet Cutlass</span>
+                            <span>Wind Codex</span>
+                            <span>Sedan Stone</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>Panacea +1</span>
+                            <span>Panacea +2</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Sasuke</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>-</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>N</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Estoc +2</span>
+                            <span>Arming Sword +2</span>
+                            <span>Pollaxe +2</span>
+                            <span>Cutlass +2</span>
+                            <span>Jonin Blade +2</span>
+                            <span>Wind Biblion +2</span>
+                            <span>Ica Stone +2</span>
+                            <span>Bravery Ring +8</span>
+                            <span>Engraved Earrings +8</span>
+                            <span>Eye Amulet +8</span>
+                            <span>Dragonite</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>Steel Bangle +6</span>
+                            <span>Steel Bangle +7</span>
+                            <span>Ogre's Bangle +5</span>
+                            <span>Demon's Pendant +3</span>
+                            <span>Plant Ring +6</span>
+                            <span>Plant Ring +7</span>
+                            <span>Miracle Powder</span>
+                            <span>Raspberry Bread</span>
+                            <span>Raspberry Bread +</span>
+                            <span>Plum Rice Ball +</span>
+                            <span>Apple Pie</span>
+                            <span>Apple Pie +</span>
+                            <span>Prayer Charm +3</span>
+                            <span>Prayer Charm +4</span>
+                            <span>Prayer Charm +5</span>
+                            <span>Sorcerer's Charm +4</span>
+                            <span>Sorcerer's Charm +5</span>
+                            <span>Sorcerer's Charm +6</span>
+                            <span>Poison-stopper Bone</span>
+                            <span>Poison-stopper Bone +</span>
+                            <span>Bizarre Bone</span>
+                            <span>Giant's Ring +6</span>
+                            <span>Giant's Ring +7</span>
+                            <span>Void Anklet +6</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="lv90" class="list">
+                    <div class="type">
+                        <div class="rarity">
+                            <h3>Lv.90</h3>
+                        </div>
+                        <div class="B_chest">
+                            <h3>Boss Chest</h3>
+                        </div>
+                        <div class="N_chest">
+                            <h3>Normal Chest</h3>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>SR</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>-</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>Prayer Charm +7</span>
+                            <span>Sorcerer's Charm +7</span>
+                            <span>Bizarre Bone +</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R++</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>-</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>Steel Bangle +7</span>
+                            <span>Plant Ring +7</span>
+                            <span>Prayer Charm +5</span>
+                            <span>Prayer Charm +6</span>
+                            <span>Relic of Faith</span>
+                            <span>Sorcerer's Charm +6</span>
+                            <span>Panacea +2</span>
+                            <span>Giant's Ring +7</span>
+                            <span>Void Anklet +6</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R+</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Estoc +2</span>
+                            <span>Arming Sword +2</span>
+                            <span>Pollaxe +2</span>
+                            <span>Cutlass +2</span>
+                            <span>Wind Biblion +2</span>
+                            <span>Ica Stone +2</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>Panacea +1</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Jonin Blade +2</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>-</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>N</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Estoc +1</span>
+                            <span>Arming Sword +1</span>
+                            <span>Pollaxe +1</span>
+                            <span>Cutlass +1</span>
+                            <span>Jonin Blade +1</span>
+                            <span>Wind Biblion +1</span>
+                            <span>Ica Stone +1</span>
+                            <span>Dragonite</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>Steel Bangle +5</span>
+                            <span>Steel Bangle +6</span>
+                            <span>Ogre's Bangle +4</span>
+                            <span>Demon's Pendant +2</span>
+                            <span>Plant Ring +5</span>
+                            <span>Plant Ring +6</span>
+                            <span>Miracle Powder</span>
+                            <span>Raspberry Bread</span>
+                            <span>Raspberry Bread +</span>
+                            <span>Monster Steak</span>
+                            <span>Monster Steak +</span>
+                            <span>Plum Rice Ball</span>
+                            <span>Plum Rice Ball +</span>
+                            <span>Apple Pie</span>
+                            <span>Apple Pie +</span>
+                            <span>Prayer Charm +2</span>
+                            <span>Prayer Charm +3</span>
+                            <span>Prayer Charm +4</span>
+                            <span>Sorcerer's Charm +3</span>
+                            <span>Sorcerer's Charm +4</span>
+                            <span>Sorcerer's Charm +5</span>
+                            <span>Poison-stopper Bone</span>
+                            <span>Poison-stopper Bone +</span>
+                            <span>Bizarre Bone</span>
+                            <span>Giant's Ring +5</span>
+                            <span>Giant's Ring +6</span>
+                            <span>Void Anklet +5</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="lv80" class="list">
+                    <div class="type">
+                        <div class="rarity">
+                            <h3>Lv.80</h3>
+                        </div>
+                        <div class="B_chest">
+                            <h3>Boss Chest</h3>
+                        </div>
+                        <div class="N_chest">
+                            <h3>Normal Chest</h3>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>SR</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>-</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>Prayer Charm +6</span>
+                            <span>Sorcerer's Charm +6</span>
+                            <span>Bizarre Bone +</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R++</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Estoc +1</span>
+                            <span>Arming Sword +1</span>
+                            <span>Pollaxe +1</span>
+                            <span>Cutlass +1</span>
+                            <span>Wind Biblion +1</span>
+                            <span>Ica Stone +1</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>Steel Bangle +6</span>
+                            <span>Plant Ring +6</span>
+                            <span>Prayer Charm +4</span>
+                            <span>Prayer Charm +5</span>
+                            <span>Relic of Faith</span>
+                            <span>Sorcerer's Charm +5</span>
+                            <span>Panacea +2</span>
+                            <span>Giant's Ring +6</span>
+                            <span>Void Anklet +5</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R+</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>-</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>Panacea +1</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Jonin Blade +1</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>-</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>N</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Estoc</span>
+                            <span>Arming Sword</span>
+                            <span>Pollaxe</span>
+                            <span>Cutlass</span>
+                            <span>Jonin Blade</span>
+                            <span>Wind Biblion</span>
+                            <span>Ica Stone</span>
+                            <span>Dragonite</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>Steel Bangle +4</span>
+                            <span>Steel Bangle +5</span>
+                            <span>Ogre's Bangle +4</span>
+                            <span>Demon's Pendant +2</span>
+                            <span>Plant Ring +4</span>
+                            <span>Plant Ring +5</span>
+                            <span>Miracle Powder</span>
+                            <span>Raspberry Bread</span>
+                            <span>Raspberry Bread +</span>
+                            <span>Monster Steak</span>
+                            <span>Monster Steak +</span>
+                            <span>Plum Rice Ball</span>
+                            <span>Plum Rice Ball +</span>
+                            <span>Apple Pie</span>
+                            <span>Apple Pie +</span>
+                            <span>Prayer Charm +1</span>
+                            <span>Prayer Charm +2</span>
+                            <span>Prayer Charm +3</span>
+                            <span>Sorcerer's Charm +2</span>
+                            <span>Sorcerer's Charm +3</span>
+                            <span>Sorcerer's Charm +4</span>
+                            <span>Poison-stopper Bone</span>
+                            <span>Poison-stopper Bone +</span>
+                            <span>Bizarre Bone</span>
+                            <span>Giant's Ring +4</span>
+                            <span>LGiant's Ring +5</span>
+                            <span>Void Anklet +4</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="lv70" class="list">
+                    <div class="type">
+                        <div class="rarity">
+                            <h3>Lv.70</h3>
+                        </div>
+                        <div class="B_chest">
+                            <h3>Boss Chest</h3>
+                        </div>
+                        <div class="N_chest">
+                            <h3>Normal Chest</h3>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>SR</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>-</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>Prayer Charm +5</span>
+                            <span>Sorcerer's Charm +5</span> </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R++</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>-</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>Bizarre Bone +</span>
+                            <span>Steel Bangle +5</span>
+                            <span>Plant Ring +5</span>
+                            <span>Prayer Charm +4</span>
+                            <span>Relic of Faith</span>
+                            <span>Panacea +2</span>
+                            <span>Giant's Ring +5</span>
+                            <span>Void Anklet +4</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R+</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Mainz Gladius</span>
+                            <span>Dragon Slayer +2</span>
+                            <span>Apas Blade</span>
+                            <span>Dragon Slayer +2</span>
+                            <span>Halberd +3</span>
+                            <span>Dragon Breaker +2</span>
+                            <span>Inferno Claymore</span>
+                            <span>Dragon's Torment +2</span>
+                            <span>Sais +3</span>
+                            <span>Dragon Killer +2</span>
+                            <span>Chakram +3</span>
+                            <span>Dragon Bane +2</span>
+                            <span>Water Ledger +3</span>
+                            <span>Astral Tome +2</span>
+                            <span>Green Lantern +3</span>
+                            <span>Cintāma?i +2</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>Panacea +1</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>N</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Gladius +2</span>
+                            <span>Broadsword +2</span>
+                            <span>Halberd +2</span>
+                            <span>Flame Claymore +2</span>
+                            <span>Sais +2</span>
+                            <span>Chakram +2</span>
+                            <span>Water Ledger +1</span>
+                            <span>Green Lantern +2</span>
+                            <span>Dragonite</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>Steel Bangle +3</span>
+                            <span>Steel Bangle +4</span>
+                            <span>Ogre's Bangle +3</span>
+                            <span>Demon's Pendant +2</span>
+                            <span>Plant Ring +3</span>
+                            <span>Plant Ring +4</span>
+                            <span>Miracle Powder</span>
+                            <span>Raspberry Bread</span>
+                            <span>Raspberry Bread +</span>
+                            <span>Monster Steak</span>
+                            <span>Monster Steak +</span>
+                            <span>Plum Rice Ball</span>
+                            <span>Plum Rice Ball +</span>
+                            <span>Apple Pie</span>
+                            <span>Apple Pie +</span>
+                            <span>Prayer Charm +1</span>
+                            <span>Prayer Charm +2</span>
+                            <span>Prayer Charm +3</span>
+                            <span>Sorcerer's Charm +2</span>
+                            <span>Sorcerer's Charm +3</span>
+                            <span>Sorcerer's Charm +4</span>
+                            <span>Poison-stopper Bone</span>
+                            <span>Poison-stopper Bone +</span>
+                            <span>Bizarre Bone</span>
+                            <span>Giant's Ring +3</span>
+                            <span>Giant's Ring +4</span>
+                            <span>Prayer Charm +1</span>
+                            <span>Prayer Charm +2</span>
+                            <span>Prayer Charm +3</span>
+                            <span>Sorcerer's Charm +2</span>
+                            <span>Sorcerer's Charm +3</span>
+                            <span>Sorcerer's Charm +4</span>
+                            <span>Poison-stopper Bone</span>
+                            <span>Poison-stopper Bone +</span>
+                            <span>Bizarre Bone</span>
+                            <span>Giant's Ring +3</span>
+                            <span>Giant's Ring +4</span>
+                            <span>Void Anklet +3</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="mfd" class="lists">
+                <!-- mfd 70~110-->
+                <h2 class="quest">Marked For Death</h2>
+                <div id="lv110" class="list">
+                    <div class="type">
+                        <div class="rarity">
+                            <h3>Lv.110</h3>
+                        </div>
+                        <div class="B_chest">
+                            <h3>Boss Chest</h3>
+                        </div>
+                        <div class="N_chest">
+                            <h3>Normal Chest</h3>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R++</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Dragon King's Crystal</span>
+                            <span>Fork of Good Fortune</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>-</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R+</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Dragon Horn</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>-</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Green Dragon Guandao</span>
+                            <span>Vorpal Sword</span>
+                            <span>Master Axe</span>
+                            <span>Ascalon</span>
+                            <span>Azoth</span>
+                            <span>Haura Shuriken</span>
+                            <span>Akashic Records</span>
+                            <span>Yata no Kagami</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>-</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>N</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Dragon Slayer</span>
+                            <span>Dragon Slayer</span>
+                            <span>Dragon Breaker</span>
+                            <span>Dragon's Torment</span>
+                            <span>Dragon Killer</span>
+                            <span>Dragon Bane</span>
+                            <span>Astral Tome</span>
+                            <span>Cintāma?i</span>
+                            <span>Pendant of Hope +2</span>
+                            <span>Dragonite</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>-</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="lv100" class="list">
+                    <div class="type">
+                        <div class="rarity">
+                            <h3>Lv.100</h3>
+                        </div>
+                        <div class="B_chest">
+                            <h3>Boss Chest</h3>
+                        </div>
+                        <div class="N_chest">
+                            <h3>Normal Chest</h3>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R++</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Dragon King's Crystal</span>
+                            <span>Fork of Good Fortune</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>-</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R+</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Dragon Slayer +3</span>
+                            <span>Dragon Slayer +3</span>
+                            <span>Dragon Breaker +3</span>
+                            <span>Dragon's Torment +3</span>
+                            <span>Dragon Killer +3</span>
+                            <span>Dragon Bane +3</span>
+                            <span>Astral Tome +3</span>
+                            <span>Cintāma?i +3</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>-</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Green Dragon Guandao</span>
+                            <span>Vorpal Sword</span>
+                            <span>Master Axe</span>
+                            <span>Ascalon</span>
+                            <span>Azoth</span>
+                            <span>Haura Shuriken</span>
+                            <span>Akashic Records</span>
+                            <span>Yata no Kagami</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>-</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>N</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Dragon Slayer</span>
+                            <span>Dragon Slayer</span>
+                            <span>Dragon Breaker</span>
+                            <span>Dragon's Torment</span>
+                            <span>Dragon Killer</span>
+                            <span>Dragon Bane</span>
+                            <span>Astral Tome</span>
+                            <span>Cintāma?i</span>
+                            <span>Pendant of Hope +2</span>
+                            <span>Dragonite</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>-</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="lv90" class="list">
+                    <div class="type">
+                        <div class="rarity">
+                            <h3>Lv.90</h3>
+                        </div>
+                        <div class="B_chest">
+                            <h3>Boss Chest</h3>
+                        </div>
+                        <div class="N_chest">
+                            <h3>Normal Chest</h3>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R++</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Dragon King's Crystal</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>-</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Dragon Slayer +3</span>
+                            <span>Green Dragon Guandao</span>
+                            <span>Dragon Slayer +3</span>
+                            <span>Vorpal Sword</span>
+                            <span>Dragon Breaker +3</span>
+                            <span>Master Axe</span>
+                            <span>Dragon's Torment +3</span>
+                            <span>Ascalon</span>
+                            <span>Dragon Killer +3</span>
+                            <span>Azoth</span>
+                            <span>Dragon Bane +3</span>
+                            <span>Haura Shuriken</span>
+                            <span>Astral Tome +3</span>
+                            <span>Akashic Records</span>
+                            <span>Cintāma?i +3</span>
+                            <span>Yata no Kagami</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>-</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>N</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Dragon Slayer</span>
+                            <span>Dragon Slayer</span>
+                            <span>Dragon Breaker</span>
+                            <span>Dragon's Torment</span>
+                            <span>Dragon Killer</span>
+                            <span>Dragon Bane</span>
+                            <span>Astral Tome</span>
+                            <span>Cintāma?i</span>
+                            <span>Pendant of Hope +2</span>
+                            <span>Dragonite</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>-</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="lv80" class="list">
+                    <div class="type">
+                        <div class="rarity">
+                            <h3>Lv.80</h3>
+                        </div>
+                        <div class="B_chest">
+                            <h3>Boss Chest</h3>
+                        </div>
+                        <div class="N_chest">
+                            <h3>Normal Chest</h3>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R++</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Amulet of Darkness +1</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>-</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Dragon Slayer +3</span>
+                            <span>Dragon Slayer +3</span>
+                            <span>Dragon Breaker +3</span>
+                            <span>Dragon's Torment +3</span>
+                            <span>Dragon Killer +3</span>
+                            <span>Dragon Bane +3</span>
+                            <span>Astral Tome +3</span>
+                            <span>Cintāma?i +3</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>-</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>N</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Dragon Slayer</span>
+                            <span>Dragon Slayer</span>
+                            <span>Dragon Breaker</span>
+                            <span>Dragon's Torment</span>
+                            <span>Dragon Killer</span>
+                            <span>Dragon Bane</span>
+                            <span>Astral Tome</span>
+                            <span>Cintāma?i</span>
+                            <span>Pendant of Hope +2</span>
+                            <span>Dragonite</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>-</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="lv65" class="list">
+                    <div class="type">
+                        <div class="rarity">
+                            <h3>Lv.65</h3>
+                        </div>
+                        <div class="B_chest">
+                            <h3>Boss Chest</h3>
+                        </div>
+                        <div class="N_chest">
+                            <h3>Normal Chest</h3>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R++</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Amulet of Darkness +1</span>
+                            <span>Dragon King's Crystal</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>-</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Dragon Slayer +1</span>
+                            <span>Dragon Slayer +2</span>
+                            <span>Dragon Slayer +1</span>
+                            <span>Dragon Slayer +2</span>
+                            <span>Dragon Breaker +1</span>
+                            <span>Dragon Breaker +2</span>
+                            <span>Dragon's Torment +1</span>
+                            <span>Dragon's Torment +2</span>
+                            <span>Dragon Killer +1</span>
+                            <span>Dragon Killer +2</span>
+                            <span>Dragon Bane +1</span>
+                            <span>Dragon Bane +2</span>
+                            <span>Astral Tome +1</span>
+                            <span>Astral Tome +2</span>
+                            <span>Cintāma?i +1</span>
+                            <span>Cintāma?i +2</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>-</span>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>N</span>
+                        </div>
+                        <div class="B_chest">
+                            <span>Dragon Slayer</span>
+                            <span>Dragon Slayer</span>
+                            <span>Dragon Breaker</span>
+                            <span>Dragon's Torment</span>
+                            <span>Dragon Killer</span>
+                            <span>Dragon Bane</span>
+                            <span>Astral Tome</span>
+                            <span>Cintāma?i</span>
+                            <span>Pendant of Hope +2</span>
+                            <span>Dragonite</span>
+                        </div>
+                        <div class="N_chest">
+                            <span>-</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- <section id="" class="lists">
+                <h2 class="quest">Sea of Tumult</h2>
+                <div id="lv110" class="list">
+                    <div class="type">
+                        <div class="rarity">
+                            <h3>Lv.70</h3>
+                        </div>
+                        <div class="B_chest">
+                            <h3>Boss Chest</h3>
+                        </div>
+                        <div class="N_chest">
+                            <h3>Normal Chest</h3>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>SR</span>
+                        </div>
+                        <div class="B_chest">
+                            span*
+                        </div>
+                        <div class="N_chest">
+                            span*
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R++</span>
+                        </div>
+                        <div class="B_chest">
+                            span*
+                        </div>
+                        <div class="N_chest">
+                            span*
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R+</span>
+                        </div>
+                        <div class="B_chest">
+                            span*
+                        </div>
+                        <div class="N_chest">
+                            span*
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>N</span>
+                        </div>
+                        <div class="B_chest">
+                            span*
+                        </div>
+                        <div class="N_chest">
+                            span*
+                        </div>
+                    </div>
+                </div>
+
+                <div id="lv100" class="list">
+                    <div class="type">
+                        <div class="rarity">
+                            <h3>Lv.70</h3>
+                        </div>
+                        <div class="B_chest">
+                            <h3>Boss Chest</h3>
+                        </div>
+                        <div class="N_chest">
+                            <h3>Normal Chest</h3>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>SR</span>
+                        </div>
+                        <div class="B_chest">
+                            span*
+                        </div>
+                        <div class="N_chest">
+                            span*
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R++</span>
+                        </div>
+                        <div class="B_chest">
+                            span*
+                        </div>
+                        <div class="N_chest">
+                            span*
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R+</span>
+                        </div>
+                        <div class="B_chest">
+                            span*
+                        </div>
+                        <div class="N_chest">
+                            span*
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>N</span>
+                        </div>
+                        <div class="B_chest">
+                            span*
+                        </div>
+                        <div class="N_chest">
+                            span*
+                        </div>
+                    </div>
+                </div>
+
+                <div id="lv90" class="list">
+                    <div class="type">
+                        <div class="rarity">
+                            <h3>Lv.70</h3>
+                        </div>
+                        <div class="B_chest">
+                            <h3>Boss Chest</h3>
+                        </div>
+                        <div class="N_chest">
+                            <h3>Normal Chest</h3>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>SR</span>
+                        </div>
+                        <div class="B_chest">
+                            span*
+                        </div>
+                        <div class="N_chest">
+                            span*
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R++</span>
+                        </div>
+                        <div class="B_chest">
+                            span*
+                        </div>
+                        <div class="N_chest">
+                            span*
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R+</span>
+                        </div>
+                        <div class="B_chest">
+                            span*
+                        </div>
+                        <div class="N_chest">
+                            span*
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>N</span>
+                        </div>
+                        <div class="B_chest">
+                            span*
+                        </div>
+                        <div class="N_chest">
+                            span*
+                        </div>
+                    </div>
+                </div>
+
+                <div id="lv80" class="list">
+                    <div class="type">
+                        <div class="rarity">
+                            <h3>Lv.70</h3>
+                        </div>
+                        <div class="B_chest">
+                            <h3>Boss Chest</h3>
+                        </div>
+                        <div class="N_chest">
+                            <h3>Normal Chest</h3>
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>SR</span>
+                        </div>
+                        <div class="B_chest">
+                            span*
+                        </div>
+                        <div class="N_chest">
+                            span*
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R++</span>
+                        </div>
+                        <div class="B_chest">
+                            span*
+                        </div>
+                        <div class="N_chest">
+                            span*
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R+</span>
+                        </div>
+                        <div class="B_chest">
+                            span*
+                        </div>
+                        <div class="N_chest">
+                            span*
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>N</span>
+                        </div>
+                        <div class="B_chest">
+                            span*
+                        </div>
+                        <div class="N_chest">
+                            span*
+                        </div>
+                    </div>
+                </div>
+
+                <div id="lv70" class="list">
+                    <div class="type">
+                        <div class="rarity">
+                            <h3>Lv.70</h3>
+                        </div>
+                        <div class="B_chest">
+                            <h3>Boss Chest</h3>
+                        </div>
+                        <div class="N_chest">
+                            <h3>Normal Chest</h3>
+                        </div>
+                    </div>
+
+                                        <div class="type">
+                        <div class="rarity">
+                            <span>SR</span>
+                        </div>
+                        <div class="B_chest">
+                            span*
+                        </div>
+                        <div class="N_chest">
+                            span*
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R++</span>
+                        </div>
+                        <div class="B_chest">
+                            span*
+                        </div>
+                        <div class="N_chest">
+                            span*
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>R+</span>
+                        </div>
+                        <div class="B_chest">
+                            span*
+                        </div>
+                        <div class="N_chest">
+                            span*
+                        </div>
+                    </div>
+
+                    <div class="type">
+                        <div class="rarity">
+                            <span>N</span>
+                        </div>
+                        <div class="B_chest">
+                            span*
+                        </div>
+                        <div class="N_chest">
+                            span*
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
+        </section>
+
+    </main>
+    <script src="../scripts/scriptd.js"></script>
+    <script src="../scripts/script.js"></script>
+</body>
+
+</html>

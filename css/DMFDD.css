@@ -1,14 +1,9 @@
-.overflow {
-    overflow: hidden;
-}
-
 .content {
     margin: 6em 0;
     display: flex;
+    display: -webkit-flex;
     flex-direction: column;
     text-align: center;
-    height: 80vh;
-
     animation: animation .5s;
 }
 
@@ -23,138 +18,114 @@
     font-size: 1.2em;
 }
 
-.weapons-list {
+.tips{
+    margin-top:1.5em;
+    font-size: 1.2em;
+}
+
+.drop-lists {
     position: relative;
-    margin: 15px auto 0 auto;
     display: flex;
+    display: -webkit-flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
 }
 
-#weapons {
-    position: absolute;
-    top: 0;
-    transition: 0.5s ease;
-}
-
-.hide {
-    z-index: -1;
-    opacity: 0;
-}
-
-.hide-more {
-    display: none;
-}
-
-.show {
-    z-index: 0;
-    opacity: 1;
-}
-
-.grid50,
-.grid60,
-.grid70,
-.grid80,
-.grid90,
-.grid100 {
-    display: flex;
-    flex-direction: column;
-    animation: animation .5s;
-}
-
-.type {
+.quest {
     margin: 0.5em 0;
     display: flex;
     align-items: center;
     text-align: center;
-
-    font-size: 2em;
+    width: 100%;
+    font-size: 3em;
     letter-spacing: 2.5px;
     font-weight: 100;
 }
 
-.type::before,
-.type::after {
+.quest::before,
+.quest::after {
     content: '';
     flex: 1;
     border-bottom: 1px solid;
 }
 
-.type::before {
+.quest::before {
     border-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)) 10;
     margin-right: .25em;
 }
 
-.type::after {
+.quest::after {
     border-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)) 10;
     margin-left: .25em;
 }
 
-.s-sword,
-.sword {
+.lists {
+    margin-bottom: 2em;
     display: grid;
-    grid-gap: 1.5em 3em;
-    grid-template-columns: repeat(4, 1fr);
-}
-
-.weapon {
-    /*    margin-bottom: 2em;*/
-    display: flex;
-    align-items: center;
-    min-width: 350px;
-    flex-direction: column;
-}
-
-.weapon > h3 {
-    margin: 5px 0;
-    font-size: 1.8em;
-}
-
-.stat {
-    margin: 10px 0;
-    padding: 10px;
-    display: grid;
-    justify-items: left;
+    width: 100%;
+    grid-gap: 1em;
     grid-template-columns: repeat(2, 1fr);
-    border: 1px solid white;
-    border-radius: 3px;
-    width: 370px;
-    background-color: rgba(0, 0, 0, 0.5);
 }
 
-.stat span {
-    position: relative;
-    margin: 3px 7px;
+.lists.hide{
+    display: none;
+}
+
+.lists h2{
+    grid-column-start: span 2;
+}
+
+.list {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    border: 5px solid white;
+    border-radius: 5px;
+    height: 100%;
     width: 90%;
-    font-size: 1.8em;
-    text-align: left;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
-.weapon p {
-    font-size: 1.5em;
+.list .type {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid white;
+    letter-spacing: 1px;
 }
 
-@media(max-width:1670px) {
-    .overflow-RWD {
-        overflow-x: hidden;
-    }
-
-    .s-sword,
-    .sword {
-        grid-gap: 2em 3em;
-        grid-template-columns: repeat(3, 1fr);
-    }
+.rarity,
+.B_chest,
+.N_chest {
+    margin: auto;
+    text-align: center;
+    font-size: 1.4em;
 }
 
-@media(max-width:1570px) {
-
-    .s-sword,
-    .sword {
-        grid-template-columns: repeat(3, 1fr);
-    }
+.B_chest{
+    width: 35%;
 }
+
+.N_chest{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 55%;
+    color:#cccccc;
+    font-size: 1.2em;
+}
+
+.rarity {
+    width: 10%;
+}
+
+.type span {
+    padding: 7px 0;
+    display: block;
+}
+
+
 
 @media(max-width:1300px) {
     header {
@@ -191,18 +162,13 @@
         font-size: 2em;
     }
 
-    .s-sword,
-    .sword {
-        grid-gap: 2em 4em;
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media(max-width:800px) {
-
-    .s-sword,
-    .sword {
+    .lists {
+        width: 90%;
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .lists h2{
+        grid-column-start: span 1;
     }
 }
 

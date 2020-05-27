@@ -92,12 +92,16 @@ h2 {
 }
 
 .log {
-    margin-bottom: .5em;
+    margin-bottom: 3em;
     padding: 1em;
     width: 60%;
     border: 1px solid white;
+}
+
+.log li{
+    padding: .2em;
     font-size: 2em;
-    line-height: 1.5em;
+    line-height: .8em;
     letter-spacing: 1px;
 }
 
