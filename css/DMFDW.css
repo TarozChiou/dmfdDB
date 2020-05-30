@@ -145,8 +145,6 @@ h2:nth-of-type(6) a {
     background-image: linear-gradient(to right, rgb(255, 238, 0), rgb(189, 123, 0));
 } */
 
-
-
 @media(max-width:1300px) {
     header {
         padding: 0.5em 5em;
