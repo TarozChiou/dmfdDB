@@ -65,7 +65,7 @@
     margin-bottom: 2em;
     display: grid;
     width: 100%;
-    grid-gap: 1em;
+    grid-gap: 2em 0em;
     grid-template-columns: repeat(2, 1fr);
 }
 

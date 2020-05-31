@@ -4,6 +4,7 @@ var lists = document.querySelectorAll(".lists");
 var ogreF = document.getElementById("ogreF"),
     sot = document.getElementById("sot"),
     ud = document.getElementById("ud"),
+    cp = document.getElementById("cp"),
     mfd = document.getElementById("mfd");
 
 function questSelector() {
@@ -24,6 +25,8 @@ function questSelector() {
         sot.classList.remove("hide");
     } else if (t === "ud") {
         ud.classList.remove("hide");
+    } else if (t === "cp") {
+        cp.classList.remove("hide");
     } else if (t === "mfd") {
         mfd.classList.remove("hide");
     } 
